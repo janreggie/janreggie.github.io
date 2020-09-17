@@ -1,24 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>react on janreggie&#39;s sandbox</title>
-    <link>https://janreggie.github.io/tags/react/</link>
-    <description>Recent content in react on janreggie&#39;s sandbox</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Jan Reggie Dela Cruz</copyright>
-    <lastBuildDate>Thu, 17 Sep 2020 17:34:33 +0800</lastBuildDate><atom:link href="https://janreggie.github.io/tags/react/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>randomquoter: Random Quote Machine</title>
-      <link>https://janreggie.github.io/project/randomquoter/</link>
-      <pubDate>Thu, 17 Sep 2020 17:34:33 +0800</pubDate>
-      
-      <guid>https://janreggie.github.io/project/randomquoter/</guid>
-      <description>&lt;p&gt;In this post, I talk about randomquoter, a random quote machine,
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>react on janreggie's sandbox</title><link>https://janreggie.github.io/tags/react/</link><description>Recent content in react on janreggie's sandbox</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Jan Reggie Dela Cruz</copyright><lastBuildDate>Thu, 17 Sep 2020 17:34:33 +0800</lastBuildDate><atom:link href="https://janreggie.github.io/tags/react/index.xml" rel="self" type="application/rss+xml"/><item><title>randomquoter: Random Quote Machine</title><link>https://janreggie.github.io/project/randomquoter/</link><pubDate>Thu, 17 Sep 2020 17:34:33 +0800</pubDate><guid>https://janreggie.github.io/project/randomquoter/</guid><description>&lt;p>In this post, I talk about randomquoter, a random quote machine,
 which is the first project of five for the &amp;ldquo;Front End Libraries&amp;rdquo; certification in freeCodeCamp,
-wherein I used &lt;code&gt;create-react-app&lt;/code&gt; to bootstrap my React application
-as well as TypeScript to greatly improve type safety.&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
-</rss>
+wherein I used &lt;code>create-react-app&lt;/code> to bootstrap my React application
+as well as TypeScript to greatly improve type safety.&lt;/p></description></item></channel></rss>
