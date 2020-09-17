@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on janreggie&#39;s sandbox</title>
+    <link>https://janreggie.github.io/tags/</link>
+    <description>Recent content in Tags on janreggie&#39;s sandbox</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Jan Reggie Dela Cruz</copyright>
+    <lastBuildDate>Thu, 17 Sep 2020 17:34:33 +0800</lastBuildDate><atom:link href="https://janreggie.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>freecodecamp</title>
+      <link>https://janreggie.github.io/tags/freecodecamp/</link>
+      <pubDate>Thu, 17 Sep 2020 17:34:33 +0800</pubDate>
+      
+      <guid>https://janreggie.github.io/tags/freecodecamp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>https://janreggie.github.io/tags/javascript/</link>
+      <pubDate>Thu, 17 Sep 2020 17:34:33 +0800</pubDate>
+      
+      <guid>https://janreggie.github.io/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>react</title>
+      <link>https://janreggie.github.io/tags/react/</link>
+      <pubDate>Thu, 17 Sep 2020 17:34:33 +0800</pubDate>
+      
+      <guid>https://janreggie.github.io/tags/react/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

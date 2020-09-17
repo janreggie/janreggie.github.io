@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8"><script type="application/ld+json">
+  {
+    "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+       "@type": "WebPage",
+       "@id": "https:\/\/janreggie.github.io"
+    },
+    "articleSection" : "project",
+    "name" : "randomquoter: Random Quote Machine",
+    "headline" : "randomquoter: Random Quote Machine",
+    "description" : "Creating a random quote machine for freeCodeCamp\u0027s Front End Libraries certification using create-react-app and TypeScript",
+    "inLanguage" : "en",
+    "author" : "Jan Reggie Dela Cruz",
+    "creator" : "Jan Reggie Dela Cruz",
+    "publisher": "Jan Reggie Dela Cruz",
+    "accountablePerson" : "Jan Reggie Dela Cruz",
+    "copyrightHolder" : "Jan Reggie Dela Cruz",
+    "copyrightYear" : "2020",
+    "datePublished": "2020-09-17T09:34:33Z",
+    "dateModified" : "2020-09-17T09:34:33Z",
+    "url" : "\/project\/randomquoter\/",
+    "wordCount" : "1261",
+    "keywords" : [ "react","javascript","freecodecamp","Blog" ]
+  }
+</script>
+<title>
+  randomquoter: Random Quote Machine &ndash; janreggie&#39;s sandbox
+</title><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Creating a random quote machine for freeCodeCamp&#39;s Front End Libraries certification using create-react-app and TypeScript">
+<meta name="author" content="Jan Reggie Dela Cruz">
+<link rel="icon" href="https://janreggie.github.io/favicon.ico">
+
+
+<meta itemprop="name" content="randomquoter: Random Quote Machine">
+<meta itemprop="description" content="Creating a random quote machine for freeCodeCamp&#39;s Front End Libraries certification using create-react-app and TypeScript">
+<meta itemprop="datePublished" content="2020-09-17T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-09-17T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1261">
+<meta itemprop="image" content="https://janreggie.github.io/project/randomquoter/feature-screenshot.png">
+
+
+
+<meta itemprop="keywords" content="react,javascript,freecodecamp," />
+
+<meta property="og:title" content="randomquoter: Random Quote Machine" />
+<meta property="og:description" content="Creating a random quote machine for freeCodeCamp&#39;s Front End Libraries certification using create-react-app and TypeScript" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://janreggie.github.io/project/randomquoter/" />
+<meta property="og:image" content="https://janreggie.github.io/project/randomquoter/feature-screenshot.png"/>
+<meta property="article:published_time" content="2020-09-17T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-09-17T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://janreggie.github.io/project/randomquoter/feature-screenshot.png"/>
+<meta name="twitter:title" content="randomquoter: Random Quote Machine"/>
+<meta name="twitter:description" content="Creating a random quote machine for freeCodeCamp&#39;s Front End Libraries certification using create-react-app and TypeScript"/>
+
+
+<link rel="alternate" href="https://janreggie.github.io/index.xml" type="application/rss+xml" title="janreggie&#39;s sandbox"/>
+
+
+
+  
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://janreggie.github.io/css/vendor.min.b6d395135754ea8429a9bd8562f9db2a15025dc5297de62ebea945b500f4b48bc7185f9ebf44a665b93220c3de637067c10f8d9c348666c6f9f0d188f405e6df.css" integrity="sha512-ttOVE1dU6oQpqb2FYvnbKhUCXcUpfeYuvqlFtQD0tIvHGF&#43;ev0SmZbkyIMPeY3BnwQ&#43;NnDSGZsb58NGI9AXm3w==">
+  
+  <link rel="stylesheet" href="https://janreggie.github.io/css/custom.min.87ee1ac05fd99a5e30fd260d59560dbab4705377c5951d2b9b112f7c637ce134df19291486e4d957c7e2ad869a1c61ea42aaf04c4cb8c082b13cf29e22ae10f9.css" integrity="sha512-h&#43;4awF/Zml4w/SYNWVYNurRwU3fFlR0rmxEvfGN84TTfGSkUhuTZV8firYaaHGHqQqrwTEy4wIKxPPKeIq4Q&#43;Q==">
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://janreggie.github.io/css/fantasque.min.4cecd2b4c9628f4842bb70225c5b1cef9f71cdd491e3c2a397a61126a97c70637200e48e079ff0ba97d763d5987ae2e62f371f3f786bcd8ad2041df20e8b37ea.css" integrity="sha512-TOzStMlij0hCu3AiXFsc759xzdSR48Kjl6YRJql8cGNyAOSOB5/wupfXY9WYeuLmLzcfP3hrzYrSBB3yDos36g==">
+<body>
+
+
+
+
+
+<nav class="navbar navbar-light bg-white  border-bottom">
+  <div class="container">
+    <a class="navbar-brand text-primary" href="https://janreggie.github.io/">janreggie&#39;s sandbox</a>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        
+        
+          
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="https://janreggie.github.io/about/"><i class='fas fa-heart'></i> About</a>
+            </li>
+          
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+<main role="main">
+
+  <div class="container mt-3 mb-3"><div class="card">
+  
+  
+      
+      <img class="card-img-top" src="https://janreggie.github.io/project/randomquoter/feature-screenshot_huc80183168c38f1966217cafafa964c3e_59526_1108x0_resize_box_2.png" alt="randomquoter: Random Quote Machine" title="randomquoter: Random Quote Machine">
+    
+  
+
+
+
+
+<div class="card-body">
+  <h1 class="card-title"><a href="https://janreggie.github.io/project/randomquoter/">randomquoter: Random Quote Machine</a></h1>
+  <h6 class="card-subtitle mb-2 text-muted">
+     
+      <i class="fas fa-calendar-day"></i>&nbsp;2020.09.17 -
+    
+    <i class="fas fa-user"></i>&nbsp;Jan Reggie Dela Cruz
+    
+      
+        - <i class="fas fa-clock"></i>&nbsp;~6 Minutes
+      
+    
+  </h6>
+
+   
+    <p class="text-center"><a href="https://janreggie.github.io/randomquoter/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" tabindex="-1" role="button"><i class="fas fa-globe"></i>&nbsp;randomquoter</a></p>
+  
+
+  
+    <p class="card-text"><p>In this post, I talk about randomquoter, a random quote machine,
+which is the first project of five for the &ldquo;Front End Libraries&rdquo; certification in freeCodeCamp,
+wherein I used <code>create-react-app</code> to bootstrap my React application
+as well as TypeScript to greatly improve type safety.</p>
+<h2 id="bootstraping-using-create-react-app">Bootstraping using create-react-app</h2>
+<p>I have never built a React app prior to this one.
+On freeCodeCamp I was concentrated on writing individual code snippets
+and seeing how they build together to form the final product,
+but not writing the more internal guts of the project.
+In addition, while I could write the application in <a href="https://codepen.io/" target="_blank" rel="noopener noreferrer">
+CodePen
+&nbsp;<i class="fas fa-external-link-alt"></i>
+
+</a>,
+the application that I will be making may be too complex for it,
+and running a development environment on a browser is a bit clunky.</p>
+<p>Fortunately, <a href="https://create-react-app.dev/" target="_blank" rel="noopener noreferrer">
+create-react-app
+&nbsp;<i class="fas fa-external-link-alt"></i>
+
+</a> exists
+which generates a React app with a simple command.
+I had to modify <code>package.json</code> to change the URL to <a href="https://janreggie.github.io/randomquoter/" target="_blank" rel="noopener noreferrer">
+the Github Pages site
+&nbsp;<i class="fas fa-external-link-alt"></i>
+
+</a>,
+and replace a few default parameters such as the app name and description.
+From there, it&rsquo;s just a matter of modifying <code>App.js</code> to my liking.</p>
+<h2 id="dabbling-with-typescript">Dabbling with TypeScript</h2>
+<p>When I finished the lessons for the certification,
+I wanted to expose myself to <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer">
+TypeScript
+&nbsp;<i class="fas fa-external-link-alt"></i>
+
+</a>,
+so I decided to incorporate its use in the project.
+It&rsquo;s a really interesting technology,
+and as someone who&rsquo;s used to statically typed languages such as C++ and Go,
+having this strict typing is beneficial for me.</p>
+<p>There are however some quirks which I didn&rsquo;t know about initially,
+such as using constructs like <code>React.Component&lt;props, state&gt;</code>.
+It took me a while to determine why the compiler is acting up
+but I got everything running at least.</p>
+<p>I initially intended to justuse vanilla JavaScript for this project
+but I decided after writing a bit of code that I wanted to try out TypeScript.
+I added TypeScript by manually invoking <code>yarn add</code> and changing files manually.
+This led to a somewhat awkward mix of JavaScript and TypeScript files.
+Next time I&rsquo;ll use <code>--template typescript</code> from the start.</p>
+<p>Since I am used to typing in JavaScript from freeCodeCamp,
+this repository contains code that doesn&rsquo;t seem to be idiomatic in TypeScript.
+Apologies for that but I am learning along the way.</p>
+<h2 id="program-structure-and-layout">Program structure and layout</h2>
+<p>The overall structure is simple.
+The app contains static HTML+CSS <code>Header</code> and <code>Footer</code>, with the <code>QuoteContainer</code> in between.
+To keep the Footer at the bottom of the screen layout,
+I used MDN&rsquo;s <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Sticky_footers" target="_blank" rel="noopener noreferrer">
+Sticky footers
+&nbsp;<i class="fas fa-external-link-alt"></i>
+
+</a> guide.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tsx" data-lang="tsx"><span style="color:#2838b0;font-style:italic">function</span> App() {
+  <span style="color:#2838b0">return</span> <span style="color:#888">(</span>
+    <span style="color:#888">&lt;</span><span style="color:#2838b0">div</span> <span style="color:#388038">id</span><span style="color:#666">=</span><span style="color:#b83838">&#34;App&#34;</span><span style="color:#888">&gt;</span>
+      <span style="color:#888">&lt;</span><span style="color:#2838b0">Header</span> <span style="color:#888">/&gt;</span>
+      <span style="color:#888">&lt;</span><span style="color:#2838b0">QuoteContainer</span> <span style="color:#888">/&gt;</span>
+      <span style="color:#888">&lt;</span><span style="color:#2838b0">Footer</span> <span style="color:#888">/&gt;</span>
+    <span style="color:#888">&lt;/</span><span style="color:#2838b0">div</span><span style="color:#888">&gt;</span>
+  <span style="color:#888">);</span>
+<span style="color:#888">}</span>
+</code></pre></div>
+
+
+
+<figure>
+
+   
+  
+  
+  
+    <img src="https://janreggie.github.io/project/randomquoter/always-on-top-footer_hu27f7dc34c9db8fd2b063f3fba6be9864_59988_0x600_resize_q75_box.jpg" width="337" height="600"
+      alt="An earlier version of the program, the footer is seen occupying most of the screen when viewed on mobile"/>
+<figcaption class="figure-caption">
+      <p>This is why we check on Mobile. Thanks to a close friend for bringing this to my attention.</p>
+    </figcaption>
+</figure>
+
+<h3 id="generating-quotes">Generating quotes</h3>
+<p>Before I talk about <code>QuoteContainer</code>, I want to elaborate how I generate my quotes.</p>
+<p>I have a class <code>Quote</code> which describes a quote.
+I&rsquo;ll let the code speak for itself:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#888;font-style:italic">// Quote is an interface that has an Author and a Text, but may have an optional Context.
+</span><span style="color:#888;font-style:italic">// The Text is the text of the quote.
+</span><span style="color:#888;font-style:italic">// The Author is the person who said the Quote.
+</span><span style="color:#888;font-style:italic">// The Context contains details where the Quote may be from;
+</span><span style="color:#888;font-style:italic">// for example, as an excerpt from a book.
+</span><span style="color:#888;font-style:italic"></span><span style="color:#2838b0">export</span> <span style="color:#2838b0">interface</span> Quote <span style="color:#888">{</span>
+  <span style="color:#2838b0">readonly</span> Text: <span style="color:#2838b0;font-style:italic">string</span><span style="color:#888">;</span>
+  <span style="color:#2838b0">readonly</span> Author: <span style="color:#2838b0;font-style:italic">string</span><span style="color:#888">;</span>
+  <span style="color:#2838b0">readonly</span> Context?: <span style="color:#2838b0;font-style:italic">string</span><span style="color:#888">;</span>
+<span style="color:#888">}</span>
+</code></pre></div><p>I then made a standard pool of quotes that&rsquo;s available on default.
+I just took a few from a few pages from <a href="https://en.wikiquote.org/wiki/Main_Page" target="_blank" rel="noopener noreferrer">
+Wikiquote
+&nbsp;<i class="fas fa-external-link-alt"></i>
+
+</a>:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#888;font-style:italic">// DefaultQuotes is a default array of Quotes
+</span><span style="color:#888;font-style:italic"></span><span style="color:#2838b0">export</span> <span style="color:#2838b0">const</span> DefaultQuotes: <span style="color:#2838b0;font-style:italic">Array</span><span style="color:#888">&lt;</span><span style="color:#2838b0">Quote</span><span style="color:#888">&gt;</span> <span style="color:#666">=</span> <span style="color:#888">[</span>
+  <span style="color:#888">{</span>
+    Text<span style="color:#666">:</span> <span style="color:#b83838">`Mona Lisa, Mona Lisa, men have named you
+</span><span style="color:#b83838">You&#39;re so like the lady with the mystic smile
+</span><span style="color:#b83838">Is it only &#39;cause you&#39;re lonely they have blamed you?
+</span><span style="color:#b83838">For that Mona Lisa strangeness in your smile?`</span><span style="color:#888">,</span>
+    Author<span style="color:#666">:</span> <span style="color:#b83838">`Nat King Cole`</span><span style="color:#888">,</span>
+    Context<span style="color:#666">:</span> <span style="color:#b83838">`from his song Mona Lisa`</span>
+  <span style="color:#888">},</span>
+  <span style="color:#888">{</span>
+    Text<span style="color:#666">:</span> <span style="color:#b83838">`A learning experience is one of those things that say, &#34;You know that thing you just did? Don&#39;t do that.&#34;`</span><span style="color:#888">,</span>
+    Author<span style="color:#666">:</span> <span style="color:#b83838">`Douglas Adams`</span><span style="color:#888">,</span>
+    Context<span style="color:#666">:</span> <span style="color:#b83838">`Interview in The Daily Nexus (5 April 2000), reprinted in The Salmon of Doubt`</span>
+  <span style="color:#888">},</span>
+  <span style="color:#888;font-style:italic">// this list continues on
+</span><span style="color:#888;font-style:italic"></span><span style="color:#888">]</span>
+</code></pre></div><p>An issue I have though is in encoding newlines, and the first quote appears like it&rsquo;s one line.
+<a href="https://stackoverflow.com/a/44413780/14020202" target="_blank" rel="noopener noreferrer">
+There is a solution which uses simple CSS
+&nbsp;<i class="fas fa-external-link-alt"></i>
+
+</a>.
+In addition there are just too few quotes, and I should add more.
+However, my current system is just too slow to program in React,
+so those <a href="https://github.com/janreggie/randomquoter/issues" target="_blank" rel="noopener noreferrer">
+issues
+&nbsp;<i class="fab fa-github"></i>
+
+</a> will be waiting for me some time in the future.</p>
+<p>I then made a QuoteMachine which takes in an array of Quotes
+and has a generate method:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#888;font-style:italic">// QuoteMachine is an object that can generate quotes from a pool of quotes.
+</span><span style="color:#888;font-style:italic">// The quotes must be an array of Quote items.
+</span><span style="color:#888;font-style:italic"></span><span style="color:#2838b0">export</span> <span style="color:#2838b0">class</span> QuoteMachine <span style="color:#888">{</span>
+  quotes: <span style="color:#2838b0;font-style:italic">Array</span><span style="color:#888">&lt;</span><span style="color:#2838b0">Quote</span><span style="color:#888">&gt;</span>
+
+  <span style="color:#2838b0">constructor</span><span style="color:#888">(</span>pool: <span style="color:#2838b0;font-style:italic">Array</span><span style="color:#888">&lt;</span><span style="color:#2838b0">Quote</span><span style="color:#888">&gt;)</span> <span style="color:#888">{</span> <span style="color:#2838b0">this</span><span style="color:#888">.</span>quotes <span style="color:#666">=</span> <span style="color:#888">[...</span>pool<span style="color:#888">]</span> <span style="color:#888">}</span>
+
+  generate<span style="color:#888">()</span><span style="color:#666">:</span> Quote <span style="color:#888">{</span>
+    <span style="color:#888;font-style:italic">// rng generates a random number from 0 to len(quotes)
+</span><span style="color:#888;font-style:italic"></span>    <span style="color:#2838b0">const</span> rng <span style="color:#666">=</span> <span style="color:#888">()</span> <span style="color:#666">=&gt;</span> <span style="color:#388038">Math</span><span style="color:#888">.</span>floor<span style="color:#888">(</span><span style="color:#388038">Math</span><span style="color:#888">.</span>random<span style="color:#888">()</span> <span style="color:#666">*</span> <span style="color:#2838b0">this</span><span style="color:#888">.</span>quotes<span style="color:#888">.</span>length<span style="color:#888">)</span>
+    <span style="color:#2838b0">return</span> <span style="color:#2838b0">this</span><span style="color:#888">.</span>quotes<span style="color:#888">[</span>rng<span style="color:#888">()]</span>
+  <span style="color:#888">}</span>
+<span style="color:#888">}</span>
+</code></pre></div><p>Fairly simple. Now for the frontend that takes in these quotes&hellip;</p>
+<h3 id="using-quotecontainer">Using QuoteContainer</h3>
+<p>QuoteContainer is a way to contain the box containing the quote,
+a New Quote button, and a Tweet Quote button.
+It uses a QuoteMachine which takes in DefaultQuotes,
+and stores a state containg the current quote.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tsx" data-lang="tsx"><span style="color:#2838b0">class</span> QuoteContainer <span style="color:#2838b0">extends</span> React<span style="color:#888">.</span>Component <span style="color:#888">{</span>
+  quoteMachine: <span style="color:#2838b0;font-style:italic">QuoteMachine</span>
+  state<span style="color:#666">:</span> <span style="color:#888">{</span> quote: <span style="color:#2838b0;font-style:italic">Quote</span> <span style="color:#888">}</span>
+
+  <span style="color:#2838b0">constructor</span><span style="color:#888">(</span>props: <span style="color:#2838b0;font-style:italic">object</span><span style="color:#888">)</span> <span style="color:#888">{</span>
+    <span style="color:#2838b0">super</span><span style="color:#888">(</span>props<span style="color:#888">)</span>
+    <span style="color:#2838b0">this</span><span style="color:#888">.</span>quoteMachine <span style="color:#666">=</span> <span style="color:#2838b0">new</span> QuoteMachine<span style="color:#888">(</span>DefaultQuotes<span style="color:#888">)</span>
+    <span style="color:#2838b0">this</span><span style="color:#888">.</span>state <span style="color:#666">=</span> <span style="color:#888">{</span> quote: <span style="color:#2838b0;font-style:italic">this.quoteMachine.generate</span><span style="color:#888">()</span> <span style="color:#888">}</span>
+    <span style="color:#2838b0">this</span><span style="color:#888">.</span>generateQuote <span style="color:#666">=</span> <span style="color:#2838b0">this</span><span style="color:#888">.</span>generateQuote<span style="color:#888">.</span>bind<span style="color:#888">(</span><span style="color:#2838b0">this</span><span style="color:#888">)</span>
+  <span style="color:#888">}</span>
+
+  generateQuote<span style="color:#888">()</span><span style="color:#666">:</span> <span style="color:#2838b0">void</span> <span style="color:#888">{</span>
+    <span style="color:#2838b0">this</span><span style="color:#888">.</span>setState<span style="color:#888">({</span> quote: <span style="color:#2838b0;font-style:italic">this.quoteMachine.generate</span><span style="color:#888">()</span> <span style="color:#888">})</span>
+    console<span style="color:#888">.</span>log<span style="color:#888">(</span><span style="color:#2838b0">this</span><span style="color:#888">.</span>state<span style="color:#888">.</span>quote<span style="color:#888">)</span>
+  <span style="color:#888">}</span>
+
+  render<span style="color:#888">()</span><span style="color:#666">:</span> JSX<span style="color:#888">.</span>Element <span style="color:#888">{</span>
+    <span style="color:#2838b0">const</span> newQuoteArgs <span style="color:#666">=</span> <span style="color:#888">{</span>generator: <span style="color:#2838b0;font-style:italic">this.generateQuote</span><span style="color:#888">}</span>
+    <span style="color:#2838b0">return</span> <span style="color:#888">(</span>
+      <span style="color:#888">&lt;</span><span style="color:#2838b0">div</span> <span style="color:#388038">id</span><span style="color:#666">=</span><span style="color:#b83838">&#34;quote-box-conatiner&#34;</span><span style="color:#888">&gt;</span>
+        <span style="color:#888">&lt;</span><span style="color:#2838b0">div</span> <span style="color:#388038">className</span><span style="color:#666">=</span><span style="color:#b83838">&#34;card border-primary mx-auto bg-light&#34;</span> <span style="color:#388038">id</span><span style="color:#666">=</span><span style="color:#b83838">&#34;quote-box&#34;</span><span style="color:#888">&gt;</span>
+          <span style="color:#888">&lt;</span><span style="color:#2838b0">div</span> <span style="color:#388038">className</span><span style="color:#666">=</span><span style="color:#b83838">&#34;card-body&#34;</span><span style="color:#888">&gt;</span>
+            <span style="color:#888">&lt;</span><span style="color:#2838b0">QuoteBox</span> <span style="color:#888">{</span><span style="color:#388038">...this.state.quote</span><span style="color:#888">}</span> <span style="color:#888">/&gt;</span>
+            <span style="color:#888">&lt;</span><span style="color:#2838b0">div</span> <span style="color:#388038">className</span><span style="color:#666">=</span><span style="color:#b83838">&#34;list-inline&#34;</span><span style="color:#888">&gt;</span>
+              <span style="color:#888">&lt;</span><span style="color:#2838b0">NewQuote</span> <span style="color:#888">{</span><span style="color:#388038">...newQuoteArgs</span><span style="color:#888">}</span> <span style="color:#888">/&gt;</span>
+              <span style="color:#888">&lt;</span><span style="color:#2838b0">TweetQuote</span> <span style="color:#888">{</span><span style="color:#388038">...this.state.quote</span><span style="color:#888">}</span> <span style="color:#888">/&gt;</span>
+            <span style="color:#888">&lt;/</span><span style="color:#2838b0">div</span><span style="color:#888">&gt;</span>
+          <span style="color:#888">&lt;/</span><span style="color:#2838b0">div</span><span style="color:#888">&gt;</span>
+        <span style="color:#888">&lt;/</span><span style="color:#2838b0">div</span><span style="color:#888">&gt;</span>
+      <span style="color:#888">&lt;/</span><span style="color:#2838b0">div</span><span style="color:#888">&gt;</span>
+    <span style="color:#888">)</span>
+  <span style="color:#888">}</span>
+<span style="color:#888">}</span>
+</code></pre></div><p>Notice that <code>this.state.quote</code> is passed onto <code>QuoteBox</code> for it to be displayed
+and to <code>TweetQuote</code> for a proper Tweet to be generated.
+In addition, <code>generateQuote</code> is passed to NewQuote which alters <code>this.state.quote</code>
+and thus alters the contents of <code>QuoteBox</code> and <code>TweetQuote</code>.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tsx" data-lang="tsx"><span style="color:#2838b0">class</span> NewQuote <span style="color:#2838b0">extends</span> React<span style="color:#888">.</span>Component <span style="color:#888">{</span>
+  generator<span style="color:#666">:</span> <span style="color:#888">()</span> <span style="color:#666">=&gt;</span> <span style="color:#888">{}</span>
+
+  <span style="color:#2838b0">constructor</span><span style="color:#888">(</span>props<span style="color:#666">:</span> <span style="color:#888">{</span> generator<span style="color:#666">:</span> <span style="color:#888">()</span> <span style="color:#666">=&gt;</span> <span style="color:#888">{}</span> <span style="color:#888">})</span> <span style="color:#888">{</span>
+    <span style="color:#2838b0">super</span><span style="color:#888">(</span>props<span style="color:#888">)</span>
+    <span style="color:#2838b0">this</span><span style="color:#888">.</span>generator <span style="color:#666">=</span> props<span style="color:#888">.</span>generator
+  <span style="color:#888">}</span>
+
+  render<span style="color:#888">()</span><span style="color:#666">:</span> JSX<span style="color:#888">.</span>Element <span style="color:#888">{</span>
+    <span style="color:#2838b0">return</span> <span style="color:#888">(</span>
+      <span style="color:#888">&lt;</span><span style="color:#2838b0">li</span> <span style="color:#388038">className</span><span style="color:#666">=</span><span style="color:#b83838">&#34;list-inline-item&#34;</span><span style="color:#888">&gt;</span>
+        <span style="color:#888">&lt;</span><span style="color:#2838b0">button</span> <span style="color:#388038">id</span><span style="color:#666">=</span><span style="color:#b83838">&#34;new-quote&#34;</span> <span style="color:#388038">className</span><span style="color:#666">=</span><span style="color:#b83838">&#34;list-inline-item btn btn-primary&#34;</span> <span style="color:#388038">onClick</span><span style="color:#666">=</span><span style="color:#888">{</span><span style="color:#2838b0">this</span><span style="color:#888">.</span>generator<span style="color:#888">}&gt;</span>New Quote<span style="color:#888">&lt;/</span><span style="color:#2838b0">button</span><span style="color:#888">&gt;</span>
+      <span style="color:#888">&lt;/</span><span style="color:#2838b0">li</span><span style="color:#888">&gt;</span>
+    <span style="color:#888">)</span>
+  <span style="color:#888">}</span>
+<span style="color:#888">}</span>
+
+<span style="color:#2838b0">class</span> TweetQuote <span style="color:#2838b0">extends</span> React<span style="color:#888">.</span>Component<span style="color:#888">&lt;</span><span style="color:#2838b0">Quote</span><span style="color:#888">&gt;</span> <span style="color:#888">{</span>
+  render<span style="color:#888">()</span><span style="color:#666">:</span> JSX<span style="color:#888">.</span>Element <span style="color:#888">{</span>
+    <span style="color:#2838b0;font-style:italic">let</span> text <span style="color:#666">=</span> <span style="color:#388038">encodeURIComponent</span><span style="color:#888">(</span><span style="color:#b83838">`&#34;</span><span style="color:#b83838;text-decoration:underline">${</span><span style="color:#2838b0">this</span><span style="color:#888">.</span>props<span style="color:#888">.</span>Text<span style="color:#b83838;text-decoration:underline">}</span><span style="color:#b83838">&#34; - </span><span style="color:#b83838;text-decoration:underline">${</span><span style="color:#2838b0">this</span><span style="color:#888">.</span>props<span style="color:#888">.</span>Author<span style="color:#b83838;text-decoration:underline">}</span><span style="color:#b83838">`</span><span style="color:#888">)</span>
+    <span style="color:#2838b0">return</span> <span style="color:#888">(</span>
+      <span style="color:#888">&lt;</span><span style="color:#2838b0">li</span> <span style="color:#388038">className</span><span style="color:#666">=</span><span style="color:#b83838">&#34;list-inline-item&#34;</span><span style="color:#888">&gt;</span>
+        <span style="color:#888">&lt;</span><span style="color:#2838b0">a</span> <span style="color:#388038">id</span><span style="color:#666">=</span><span style="color:#b83838">&#34;tweet-quote&#34;</span> <span style="color:#388038">className</span><span style="color:#666">=</span><span style="color:#b83838">&#34;btn btn-primary&#34;</span> <span style="color:#388038">href</span><span style="color:#666">=</span><span style="color:#888">{</span><span style="color:#b83838">`https://twitter.com/intent/tweet?text=</span><span style="color:#b83838;text-decoration:underline">${</span>text<span style="color:#b83838;text-decoration:underline">}</span><span style="color:#b83838">`</span><span style="color:#888">}&gt;</span>Tweet Quote<span style="color:#888">&lt;/</span><span style="color:#2838b0">a</span><span style="color:#888">&gt;</span>
+      <span style="color:#888">&lt;/</span><span style="color:#2838b0">li</span><span style="color:#888">&gt;</span>
+    <span style="color:#888">)</span>
+  <span style="color:#888">}</span>
+<span style="color:#888">}</span>
+</code></pre></div><p><code>NewQuote</code> isn&rsquo;t too interesting, since it&rsquo;s just a button that has an <code>onClick</code> property.
+<code>TweetQuote</code> though has this <code>encodeURIComponent</code> going on it.
+This is done in order to escape characters that would otherwise make the URL malformed.</p>
+<h2 id="testing-using-freecodecamps-test-bundle">Testing using freeCodeCamp&rsquo;s test bundle</h2>
+<p>freeCodeCamp mandates that the random quote machine fulfill <a href="https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-random-quote-machine" target="_blank" rel="noopener noreferrer">
+these user stories
+&nbsp;<i class="fas fa-external-link-alt"></i>
+
+</a>.
+To check if the tests go through, they included a <a href="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" target="_blank" rel="noopener noreferrer">
+link to some JavaScript code
+&nbsp;<i class="fas fa-external-link-alt"></i>
+
+</a>
+that creates a little hamburger on the upper-leftmost part of the code,
+where a developer can check if it fulfills all tests for a certain project.</p>
+
+
+
+
+<figure>
+
+   
+  
+  
+  
+    <img src="https://janreggie.github.io/project/randomquoter/testsuite.png" width="356" height="231"
+      alt="Screenshot of the FCC test suite, showing that it passes all 12 tests"/>
+<figcaption class="figure-caption">
+      <p>One project down. Four to go.</p>
+    </figcaption>
+</figure>
+
+<h2 id="hosting-to-github-pages">Hosting to Github Pages</h2>
+<p>Since this is a static website that doesn&rsquo;t need to interact with any server,
+Github Pages seems like a good service to use,
+and my code is already in Github so it just needs a simple workflow YAML file
+in order to compile and publish to gh-pages.</p>
+<p>I used this Medium post,
+<a href="https://medium.com/swlh/deploy-create-react-app-to-github-pages-using-github-actions-4e95ae7fd65f" target="_blank" rel="noopener noreferrer">
+<em>Deploy create-react-app to GitHub Pages using GitHub Actions</em>
+&nbsp;<i class="fas fa-external-link-alt"></i>
+
+</a>,
+to aid myself in the process.
+It uses the action <a href="https://github.com/peaceiris/actions-gh-pages" target="_blank" rel="noopener noreferrer">
+peaceiris/actions-gh-pages@v3
+&nbsp;<i class="fab fa-github"></i>
+
+</a>
+to publish the resources compiled by npm.
+I however used <code>GITHUB_TOKEN</code> instead of <code>ACTIONS_DEPLOY_KEY</code>
+since it frees me from doing more configuration</p></p>
+  
+</div>
+<div class="card-footer">
+  <small class="text-muted">
+    
+      
+        <i class="fas fa-folder text-primary"></i>&nbsp;
+        
+          <a href="https://janreggie.github.io/categories/#project" class="badge badge-primary"><span>project</span></a>
+        
+        <br />
+      
+      
+        <i class="fas fa-tags text-secondary"></i>&nbsp; 
+        
+          <a href="https://janreggie.github.io/tags/#react" class="badge badge-secondary"><span>react</span></a>
+        
+          <a href="https://janreggie.github.io/tags/#javascript" class="badge badge-secondary"><span>javascript</span></a>
+        
+          <a href="https://janreggie.github.io/tags/#freecodecamp" class="badge badge-secondary"><span>freecodecamp</span></a>
+        
+      
+    
+  </small>
+</div>
+</div>
+</div>
+
+
+    </main><footer class="navbar-light border-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-3 mb-3">
+        <h5>janreggie&#39;s sandbox</h5>
+        sandbox &#43; portfolio &#43; blog
+      </div>
+      <div class="col-12 col-md-3 mb-3">
+        <h5>Social</h5>
+        <ul class="list-unstyled list-inline">
+  <li class="list-inline-item"><a href="https://github.com/janreggie" target="_blank" rel="noopener noreferrer" title="GitHub" class="fab fa-github fa-2x"></a></li>
+
+
+
+  <li class="list-inline-item"><a href="https://gitlab.com/janreggie" target="_blank" rel="noopener noreferrer" title="GitLab" class="fab fa-gitlab fa-2x"></a></li>
+
+
+
+  <li class="list-inline-item"><a href="https://stackoverflow.com/users/14020202" target="_blank" rel="noopener noreferrer" title="Stack Overflow" class="fab fa-stack-overflow fa-2x"></a></li>
+
+
+
+
+
+
+
+  <li class="list-inline-item"><a href="https://codepen.io/janreggie" target="_blank" rel="noopener noreferrer" title="CodePen" class="fab fa-codepen fa-2x"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li class="list-inline-item"><a href="https://linkedin.com/in/janreggie" target="_blank" rel="noopener noreferrer" title="LinkedIn" class="fab fa-linkedin fa-2x"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+      </div>
+      <div class="col-12 col-md-3 mb-3">
+        <h5>Site</h5>
+        <ul class="list-unstyled">
+          
+            
+              <li><a href="https://janreggie.github.io/about/"><i class='fas fa-address-card'></i> About</a></li>
+            
+          
+            
+              <li><a href="https://janreggie.github.io/categories/"><i class='fas fa-folder'></i> Categories</a></li>
+            
+          
+            
+              <li><a href="https://janreggie.github.io/tags/"><i class='fas fa-tags'></i> Tags</a></li>
+            
+          
+        </ul>
+      </div>
+      <div class="col-12 col-md-3 mb-3">
+        
+
+
+        &copy; 2020 Jan Reggie Dela Cruz<br/>
+        
+        
+        <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">
+          <a href="https://janreggie.github.io/notice/">Except otherwise noted</a>,
+          <a rel="cc:attributionURL" property="dct:title" href="https://janreggie.github.io/">janreggie's sandbox</a>
+          is licensed under <a rel="license" href='https://janreggie.github.io/license/'>CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" /><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" /></a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="https://janreggie.github.io/js/vendor.min.677137e5832c000e05d2a682a3a67c3ce3c1fcfbea1ffe5b1cc27b7ba44d0051b4d322c845b936af431c3ed1f6e471e55d5273f9599e8e631553871bcda7395b.js" integrity="sha512-Z3E35YMsAA4F0qaCo6Z8POPB/PvqH/5bHMJ7e6RNAFG00yLIRbk2r0McPtH25HHlXVJz&#43;VmejmMVU4cbzac5Ww=="></script>
+  
+  <script src="https://janreggie.github.io/js/custom.min.08eab7c02e1a27987b10b47cdbb0c6328d8d2ca64147b565ddc005c30681d236b601db9e9d51f3c0e87e4a9ab374c30da4324d73a12ae161d229ac333b8319e9.js" integrity="sha512-COq3wC4aJ5h7ELR827DGMo2NLKZBR7Vl3cAFwwaB0ja2AduenVHzwOh&#43;SpqzdMMNpDJNc6Eq4WHSKawzO4MZ6Q=="></script>
+
+
+</body>
+</html>
