@@ -22,3 +22,6 @@ In this post I describe the steps I made in building this website.
 <!--more-->
 
 Well... let's try publishing everything first
+
+This is me trying to test Github Actions
+wondering why on earth isn't it executing the action `deploy`.
