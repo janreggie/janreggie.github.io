@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Fantasque Sans Mono';
+  src: url('../webfonts/FantasqueSansMono-Bold.woff2') format('woff2'),
+     url('../webfonts/FantasqueSansMono-Bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+     url('../webfonts/FantasqueSansMono-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+     url('../webfonts/FantasqueSansMono-Bold.svg#FantasqueSansMono-Bold') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-weight: 700;
+  font-style: normal;
+}

@@ -1,0 +1,9 @@
+<!-- customizations here -->
+
+<!-- Install FantasqueSans because somehow I can't just import it in custom.css -->
+{{ $fantasqueBold := resources.Get "/css/FantasqueSansMono-Bold-decl.css" }}
+{{ $fantasqueBoldItalic := resources.Get "/css/FantasqueSansMono-BoldItalic-decl.css" }}
+{{ $fantasqueItalic := resources.Get "/css/FantasqueSansMono-Italic-decl.css" }}
+{{ $fantasqueRegular := resources.Get "/css/FantasqueSansMono-Regular-decl.css" }}
+{{ $fantasque := slice $fantasqueBold $fantasqueBoldItalic $fantasqueItalic $fantasqueRegular | resources.Concat "/css/fantasque.css" | minify | fingerprint "sha512" }}
+<link rel="stylesheet" href="{{ $fantasque.RelPermalink }}" integrity="{{ $fantasque.Data.Integrity }}">
