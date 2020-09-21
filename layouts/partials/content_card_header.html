@@ -17,6 +17,7 @@
   {{- $featured := cond (ne $.Params.featured_image nil) (.Page.Resources.GetMatch (printf "*%s" $.Params.featured_image)) $featured -}}
   {{ $sitetitle := (.Title) }}
   {{ $fullsize := .Scratch.Get "fullsize" }}
+  <a href="{{ .RelPermalink }}">
   {{- with $featured -}}
     {{ if $fullsize }}
       {{ $thumb := .Resize "1108x" }}
@@ -26,4 +27,5 @@
       <img class="card-img-top" src="{{ $thumb.RelPermalink }}" alt="{{ $sitetitle }}" title="{{ $sitetitle }}">
     {{ end }}
   {{ end }}
+  </a>
 {{ end }}
