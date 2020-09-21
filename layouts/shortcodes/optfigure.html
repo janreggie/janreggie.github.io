@@ -13,7 +13,7 @@
   {{ else if gt $original.Height 600 }}{{ $image = .Resize "x600" }}
   {{ else }}{{ $image = . }}
   {{ end }}
-    <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}"
+    <img src="{{ $image.RelPermalink }}" class="mx-auto d-block" width="{{ $image.Width }}" height="{{ $image.Height }}"
     {{- if or ($alt) ($caption) }}
       alt="{{ with $alt }}{{ . }}{{ else }}{{ $caption | markdownify| plainify }}{{ end }}"
       {{- end -}}
@@ -21,7 +21,7 @@
 {{ end }}
   {{- if .Get "link" }}</a>{{ end -}}
   {{- if or (or (.Get "title") (.Get "caption")) (.Get "attr") -}}
-    <figcaption class="figure-caption">
+    <figcaption class="figure-caption text-center">
       {{ with (.Get "title") -}}
         <h4>{{ . }}</h4>
       {{- end -}}
