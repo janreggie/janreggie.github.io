@@ -1,0 +1,166 @@
+DefaultContentLanguage: en
+author: Jan Reggie Dela Cruz
+baseURL: "https://janreggie.github.io"
+canonifyurls: true
+copyright: Jan Reggie Dela Cruz
+enableInlineShortcodes: true
+enableRobotsTXT: true
+footnoteReturnLinkContents: ^
+languageCode: en-us
+paginate: 6
+pygmentsCodeFences: true
+theme: bootstrap-bp-hugo-theme
+title: janreggie's sandbox
+enableEmoji: true
+
+sitemap:
+  changefreq: weekly
+  priority: 0.5
+
+permalinks:
+  page: "/:slug/"
+  pages: "/:slug/"
+  post: "/post/:year/:month/:slug/"
+  posts: "/post/:year/:month/:slug/"
+
+Author:
+  name: Jan Reggie Dela Cruz
+
+params:
+  header: Welcome to janreggie's website!
+  lede: "Developer by profession, learner by passion"
+  description: sandbox + portfolio + blog
+  # images: ["logo.jpg"]
+  showPostSummary: true
+  startPageColumns: true
+  customDateFormat: 2006.01.02
+  # showListsGrouped: true
+  # alwaysExpandMenu: true
+  css:
+    - /css/custom.css
+  csscdn: [] # for external CSS sheets e.g., "https://fonts.googleapis.com/css?family=Overlock|Roboto&display=swap"
+  js:
+    - /js/custom.js
+  themeColor: light # dark, light, blue, do not set for bootstrap default
+
+markup:
+  highlight:
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    style: lovelace
+    tabWidth: 4
+
+# Someday when I'm fluent enough in Spanish.
+# For now, comment out
+#
+# languages:
+#  en:
+#    languageName = "English"
+#    weight = 1
+#    params: []
+#  es:
+#    languageName = "Español"
+#    title = "zona de pruebas dela cruz"
+#    weight = 2
+#    params: []
+
+# Sets Social Media icons to appear and link to your account. Value should be your
+# username unless otherwise noted.
+# Code from https://themes.gohugo.io/future-imperfect/ theme
+social:
+  bitbucket: ""
+  codepen: janreggie
+  github: janreggie
+  gitlab: janreggie
+  jsfiddle: ""
+  stackoverflow: "14020202" # User Number
+  # Visual Art Communities
+  behance: ""
+  deviantart: ""
+  dribbble: ""
+  flickr: ""
+  # Publishing Communities
+  medium: ""
+  wordpress: ""
+  # Professional/Business Oriented Communities
+  foursquare: ""
+  linkedin: janreggie
+  linkedin_company: ""
+  slideshare: ""
+  xing: ""
+  # Social Networks
+  discord: "" # invite link
+  facebook: ""
+  googleplus: ""
+  instagram: ""
+  pinterest: ""
+  quora: ""
+  reddit: ""
+  skype: ""
+  snapchat: ""
+  telegram: ""
+  tumblr: ""
+  twitter: ""
+  vimeo: ""
+  whatsapp: "" # WhatsApp Number
+  youtube: ""
+  # Email
+  email: ""
+
+menu:
+  main:
+    - identifier: about
+      name: About
+      pre: <i class='fas fa-heart'></i>
+      url: /about/
+      weight: 10
+
+  footer:
+    - identifier: about
+      name: About
+      pre: <i class='fas fa-address-card'></i>
+      url: /about/
+      weight: 10
+    - identifier: categories
+      name: Categories
+      pre: <i class='fas fa-folder'></i>
+      url: /categories/
+      weight: 20
+    - identifier: tags
+      name: Tags
+      pre: <i class='fas fa-tags'></i>
+      url: /tags/
+      weight: 30
+
+taxonomies:
+  category: categories
+  series: series
+  tag: tags
+
+privacy:
+  vimeo:
+    disable: false
+    simple: true
+  twitter:
+    disable: false
+    enableDNT: true
+    simple: true
+  instagram:
+    disable: false
+    simple: true
+  youtube:
+    disable: false
+    privacyEnhanced: true
+
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true
