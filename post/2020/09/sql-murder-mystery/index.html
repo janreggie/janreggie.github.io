@@ -1,0 +1,297 @@
+<!doctype html><html lang=en><meta charset=utf-8><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/janreggie.github.io"},"articleSection":"post","name":"SQL Murder Mystery","headline":"SQL Murder Mystery","description":"The SQL Murder Mystery is a fascinating game for SQL users to solve a crime","inLanguage":"en","author":"Jan Reggie Dela Cruz","creator":"Jan Reggie Dela Cruz","publisher":"Jan Reggie Dela Cruz","accountablePerson":"Jan Reggie Dela Cruz","copyrightHolder":"Jan Reggie Dela Cruz","copyrightYear":"2020","datePublished":"2020-09-21T05:29:38Z","dateModified":"2020-09-21T05:29:38Z","url":"\/post\/2020\/09\/sql-murder-mystery\/","wordCount":"2127","keywords":["sql","challenges","Blog"]}</script><title>SQL Murder Mystery &ndash; janreggie's sandbox</title><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=description content="The SQL Murder Mystery is a fascinating game for SQL users to solve a crime"><meta name=author content="Jan Reggie Dela Cruz"><link rel=icon href=https://janreggie.github.io/favicon.ico><meta itemprop=name content="SQL Murder Mystery"><meta itemprop=description content="The SQL Murder Mystery is a fascinating game for SQL users to solve a crime"><meta itemprop=datePublished content="2020-09-21T00:00:00+00:00"><meta itemprop=dateModified content="2020-09-21T00:00:00+00:00"><meta itemprop=wordCount content="2127"><meta itemprop=keywords content="sql,challenges,"><meta property="og:title" content="SQL Murder Mystery"><meta property="og:description" content="The SQL Murder Mystery is a fascinating game for SQL users to solve a crime"><meta property="og:type" content="article"><meta property="og:url" content="https://janreggie.github.io/post/2020/09/sql-murder-mystery/"><meta property="article:published_time" content="2020-09-21T00:00:00+00:00"><meta property="article:modified_time" content="2020-09-21T00:00:00+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="SQL Murder Mystery"><meta name=twitter:description content="The SQL Murder Mystery is a fascinating game for SQL users to solve a crime"><link rel=alternate href=https://janreggie.github.io/index.xml type=application/rss+xml title="janreggie's sandbox"><link rel=stylesheet href=https://janreggie.github.io/css/vendor.min.b6d395135754ea8429a9bd8562f9db2a15025dc5297de62ebea945b500f4b48bc7185f9ebf44a665b93220c3de637067c10f8d9c348666c6f9f0d188f405e6df.css integrity="sha512-ttOVE1dU6oQpqb2FYvnbKhUCXcUpfeYuvqlFtQD0tIvHGF+ev0SmZbkyIMPeY3BnwQ+NnDSGZsb58NGI9AXm3w=="><link rel=stylesheet href=https://janreggie.github.io/css/custom.min.87ee1ac05fd99a5e30fd260d59560dbab4705377c5951d2b9b112f7c637ce134df19291486e4d957c7e2ad869a1c61ea42aaf04c4cb8c082b13cf29e22ae10f9.css integrity="sha512-h+4awF/Zml4w/SYNWVYNurRwU3fFlR0rmxEvfGN84TTfGSkUhuTZV8firYaaHGHqQqrwTEy4wIKxPPKeIq4Q+Q=="><link rel=stylesheet href=https://janreggie.github.io/css/fantasque.min.a57c034b7adc7dd7350a5788106c7b6d18296d64687cdf269bde0846eea9cde483b47c412eca48b72eddc0525f65d9cac5010c9ad3653ffe7f3295eedd089dbb.css integrity="sha512-pXwDS3rcfdc1CleIEGx7bRgpbWRofN8mm94IRu6pzeSDtHxBLspIty7dwFJfZdnKxQEMmtNlP/5/MpXu3Qiduw=="><body><nav class="navbar navbar-light bg-white border-bottom"><div class=container><a class="navbar-brand text-primary" href=https://janreggie.github.io/>janreggie's sandbox</a>
+<button class="navbar-toggler collapsed" type=button data-toggle=collapse data-target=#navbarCollapse aria-controls=navbarCollapse aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="navbar-collapse collapse" id=navbarCollapse><ul class="navbar-nav mr-auto"><li class=nav-item><a class="nav-link text-primary" href=https://janreggie.github.io/project/><i class="far fa-star"></i>Projects</a></li><li class=nav-item><a class="nav-link text-primary" href=https://janreggie.github.io/post/><i class="fas fa-file-alt"></i>Posts</a></li><li class=nav-item><a class="nav-link text-primary" href=https://janreggie.github.io/about/><i class="fas fa-address-card"></i>About</a></li></ul></div></div></nav><main role=main><div class="container mt-3 mb-3"><div class=card><div class=card-body><h1 class=card-title><a href=https://janreggie.github.io/post/2020/09/sql-murder-mystery/>SQL Murder Mystery</a></h1><h6 class="card-subtitle mb-2 text-muted"><i class="fas fa-calendar-day"></i>&nbsp;2020.09.21 -
+<i class="fas fa-user"></i>&nbsp;Jan Reggie Dela Cruz
+- <i class="fas fa-clock"></i>&nbsp;~10 Minutes</h6><p class=card-text><p>The <a href=https://mystery.knightlab.com/ target=_blank rel="noopener noreferrer">SQL Murder Mystery
+&nbsp;<i class="fas fa-external-link-alt"></i></a> is quite an interesting game
+wherein users are invited to solve a murder mystery.
+This is a great way for me to hone my SQL skills
+after completing learning SQL through <a href=https://selectstarsql.com/ target=_blank rel="noopener noreferrer">Select Star SQL
+&nbsp;<i class="fas fa-external-link-alt"></i>
+</a>.
+In this post I will discuss my solution for finding out who did the murder,
+and a small activity afterwards.</p><h2 id=details>Details</h2><p>A murder has occurred sometime on January 15, 2018 at SQL City.
+You are given access to a database containg several relevant tables,
+such as person data, drivers' licenses, and gym memberships.</p><figure><a href=https://mystery.knightlab.com/schema.png><img src=https://janreggie.github.io/post/2020/09/sql-murder-mystery/schema_hu476211365c7ede77396418067ef6df7c_39826_600x0_resize_box_2.png class="mx-auto d-block" width=600 height=295 alt="The schema for the various tables in SQL Murder Mystery"></a><figcaption class="figure-caption text-center"><p>The schema. Why the residents decided to give up all of their information like this is beyond me.
+Fortunately, everything here is a work of fiction.</p></figcaption></figure><h2 id=my-solution>My solution</h2><div class=highlight><pre style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=color:#2838b0>WITH</span> murder <span style=color:#2838b0>AS</span> <span style=color:#888>(</span>
+  <span style=color:#888;font-style:italic>-- determine details of the murder
+</span><span style=color:#888;font-style:italic></span>  <span style=color:#2838b0>SELECT</span> <span style=color:#666>*</span>
+  <span style=color:#2838b0>FROM</span> crime_scene_report
+  <span style=color:#2838b0>WHERE</span> <span style=color:#388038>date</span> <span style=color:#666>=</span> <span style=color:#444>20180115</span>
+    <span style=color:#2838b0>AND</span> <span style=color:#2838b0>TYPE</span> <span style=color:#666>=</span> <span style=color:#b83838>&#39;murder&#39;</span>
+    <span style=color:#2838b0>AND</span> city <span style=color:#666>=</span> <span style=color:#b83838>&#39;SQL City&#39;</span>
+<span style=color:#888>),</span>
+first_witness <span style=color:#2838b0>AS</span> <span style=color:#888>(</span>
+  <span style=color:#888;font-style:italic>-- last house on Northwestern Dr belongs to Morty Schapiro
+</span><span style=color:#888;font-style:italic></span>  <span style=color:#2838b0>SELECT</span> <span style=color:#666>*</span>
+  <span style=color:#2838b0>FROM</span> person
+  <span style=color:#2838b0>WHERE</span> address_street_name <span style=color:#666>=</span> <span style=color:#b83838>&#39;Northwestern Dr&#39;</span>
+    <span style=color:#2838b0>AND</span> address_number <span style=color:#666>=</span> <span style=color:#888>(</span>
+      <span style=color:#2838b0>SELECT</span> <span style=color:#2838b0>MAX</span><span style=color:#888>(</span>address_number<span style=color:#888>)</span>
+      <span style=color:#2838b0>FROM</span> person
+    <span style=color:#888>)</span>
+<span style=color:#888>),</span>
+second_witness <span style=color:#2838b0>AS</span> <span style=color:#888>(</span>
+  <span style=color:#888;font-style:italic>-- name similar to &#34;Annabel&#34; and on Franklin Ave is Annabel Miller
+</span><span style=color:#888;font-style:italic></span>  <span style=color:#2838b0>SELECT</span> <span style=color:#666>*</span>
+  <span style=color:#2838b0>FROM</span> person
+  <span style=color:#2838b0>WHERE</span> name <span style=color:#2838b0>LIKE</span> <span style=color:#b83838>&#34;%Annabel%&#34;</span>
+    <span style=color:#2838b0>AND</span> address_street_name <span style=color:#666>=</span> <span style=color:#b83838>&#39;Franklin Ave&#39;</span>
+<span style=color:#888>),</span>
+witnesses <span style=color:#2838b0>AS</span> <span style=color:#888>(</span>
+  <span style=color:#888;font-style:italic>-- combine first_witness and second_witness
+</span><span style=color:#888;font-style:italic></span>  <span style=color:#2838b0>SELECT</span> person<span style=color:#888>.</span><span style=color:#666>*</span>
+  <span style=color:#2838b0>FROM</span> person<span style=color:#888>,</span> first_witness<span style=color:#888>,</span> second_witness
+  <span style=color:#2838b0>WHERE</span> person<span style=color:#888>.</span>id <span style=color:#666>=</span> first_witness<span style=color:#888>.</span>id
+    <span style=color:#2838b0>OR</span> person<span style=color:#888>.</span>id <span style=color:#666>=</span> second_witness<span style=color:#888>.</span>id
+<span style=color:#888>),</span>
+witnesses_interview <span style=color:#2838b0>AS</span> <span style=color:#888>(</span>
+  <span style=color:#888;font-style:italic>-- what did they say? details:
+</span><span style=color:#888;font-style:italic></span>  <span style=color:#888;font-style:italic>-- from witness 1
+</span><span style=color:#888;font-style:italic></span>  <span style=color:#888;font-style:italic>-- - member of Get Fit Now
+</span><span style=color:#888;font-style:italic></span>  <span style=color:#888;font-style:italic>-- - membership number of bag starts with 48Z and gold member
+</span><span style=color:#888;font-style:italic></span>  <span style=color:#888;font-style:italic>-- - plate number like %H42W%
+</span><span style=color:#888;font-style:italic></span>  <span style=color:#888;font-style:italic>-- from witness 2
+</span><span style=color:#888;font-style:italic></span>  <span style=color:#888;font-style:italic>-- - worked out on 9 Jan
+</span><span style=color:#888;font-style:italic></span>  <span style=color:#2838b0>SELECT</span> witnesses<span style=color:#888>.</span>name<span style=color:#888>,</span> interview<span style=color:#888>.</span><span style=color:#666>*</span>
+  <span style=color:#2838b0>FROM</span> interview
+    <span style=color:#2838b0>JOIN</span> witnesses <span style=color:#2838b0>ON</span> interview<span style=color:#888>.</span>person_id <span style=color:#666>=</span> witnesses<span style=color:#888>.</span>id
+<span style=color:#888>),</span>
+with_48z <span style=color:#2838b0>AS</span> <span style=color:#888>(</span>
+  <span style=color:#888;font-style:italic>-- from witness 1&#39;s report
+</span><span style=color:#888;font-style:italic></span>  <span style=color:#2838b0>SELECT</span> <span style=color:#666>*</span>
+  <span style=color:#2838b0>FROM</span> get_fit_now_member
+  <span style=color:#2838b0>WHERE</span> id <span style=color:#2838b0>LIKE</span> <span style=color:#b83838>&#39;48Z%&#39;</span>
+    <span style=color:#2838b0>AND</span> membership_status <span style=color:#666>=</span> <span style=color:#b83838>&#39;gold&#39;</span>
+<span style=color:#888>),</span>
+checked_in_at_20180109 <span style=color:#2838b0>AS</span> <span style=color:#888>(</span>
+  <span style=color:#888;font-style:italic>-- from witness 2&#39;s report
+</span><span style=color:#888;font-style:italic></span>  <span style=color:#2838b0>SELECT</span> <span style=color:#666>*</span>
+  <span style=color:#2838b0>FROM</span> get_fit_now_check_in
+  <span style=color:#2838b0>WHERE</span> check_in_date <span style=color:#666>=</span> <span style=color:#444>20180109</span>
+<span style=color:#888>),</span>
+suspect_lifters <span style=color:#2838b0>AS</span> <span style=color:#888>(</span>
+  <span style=color:#888;font-style:italic>-- from witness 1 and 2&#39;s reports
+</span><span style=color:#888;font-style:italic></span>  <span style=color:#2838b0>SELECT</span> with_48z<span style=color:#888>.</span>id <span style=color:#2838b0>AS</span> membership_id<span style=color:#888>,</span> person<span style=color:#888>.</span><span style=color:#666>*</span>
+  <span style=color:#2838b0>FROM</span> person
+    <span style=color:#2838b0>JOIN</span> with_48z <span style=color:#2838b0>ON</span> person<span style=color:#888>.</span>id <span style=color:#666>=</span> with_48z<span style=color:#888>.</span>person_id
+    <span style=color:#2838b0>JOIN</span> checked_in_at_20180109 <span style=color:#2838b0>ON</span> with_48z<span style=color:#888>.</span>id <span style=color:#666>=</span> checked_in_at_20180109<span style=color:#888>.</span>membership_id
+<span style=color:#888>),</span>
+suspect_drivers <span style=color:#2838b0>AS</span> <span style=color:#888>(</span>
+  <span style=color:#888;font-style:italic>-- from witness 2&#39;s report
+</span><span style=color:#888;font-style:italic></span>  <span style=color:#2838b0>SELECT</span> drivers_license<span style=color:#888>.</span>plate_number<span style=color:#888>,</span> person<span style=color:#888>.</span><span style=color:#666>*</span>
+  <span style=color:#2838b0>FROM</span> person
+    <span style=color:#2838b0>JOIN</span> drivers_license <span style=color:#2838b0>ON</span> person<span style=color:#888>.</span>license_id <span style=color:#666>=</span> drivers_license<span style=color:#888>.</span>id
+      <span style=color:#2838b0>AND</span> drivers_license<span style=color:#888>.</span>plate_number <span style=color:#2838b0>LIKE</span> <span style=color:#b83838>&#39;%H42W%&#39;</span>
+<span style=color:#888>),</span>
+suspect <span style=color:#2838b0>AS</span> <span style=color:#888>(</span>
+  <span style=color:#888;font-style:italic>-- combining suspect_lifters and suspect_drivers leads us to one dude
+</span><span style=color:#888;font-style:italic></span>  <span style=color:#2838b0>SELECT</span> person<span style=color:#888>.</span><span style=color:#666>*</span>
+  <span style=color:#2838b0>FROM</span> person
+    <span style=color:#2838b0>JOIN</span> suspect_lifters <span style=color:#2838b0>ON</span> person<span style=color:#888>.</span>id <span style=color:#666>=</span> suspect_lifters<span style=color:#888>.</span>id
+    <span style=color:#2838b0>JOIN</span> suspect_drivers <span style=color:#2838b0>ON</span> person<span style=color:#888>.</span>id <span style=color:#666>=</span> suspect_drivers<span style=color:#888>.</span>id
+<span style=color:#888>),</span>
+suspect_interview <span style=color:#2838b0>AS</span> <span style=color:#888>(</span>
+  <span style=color:#888;font-style:italic>-- now the plot thickens...
+</span><span style=color:#888;font-style:italic></span>  <span style=color:#888;font-style:italic>-- I was hired by a woman with a lot of money.
+</span><span style=color:#888;font-style:italic></span>  <span style=color:#888;font-style:italic>-- ... she&#39;s around 5&#39;5&#34; (65&#34;) or 5&#39;7&#34; (67&#34;).
+</span><span style=color:#888;font-style:italic></span>  <span style=color:#888;font-style:italic>-- She has red hair and she drives a Tesla Model S.
+</span><span style=color:#888;font-style:italic></span>  <span style=color:#888;font-style:italic>-- I know that she attended the SQL Symphony Concert 3 times in December 2017.
+</span><span style=color:#888;font-style:italic></span>  <span style=color:#2838b0>SELECT</span> person<span style=color:#888>.</span>name<span style=color:#888>,</span> interview<span style=color:#888>.</span><span style=color:#666>*</span>
+  <span style=color:#2838b0>FROM</span> interview
+    <span style=color:#2838b0>JOIN</span> suspect <span style=color:#2838b0>ON</span> interview<span style=color:#888>.</span>person_id <span style=color:#666>=</span> suspect<span style=color:#888>.</span>id
+    <span style=color:#2838b0>JOIN</span> person <span style=color:#2838b0>ON</span> interview<span style=color:#888>.</span>person_id <span style=color:#666>=</span> person<span style=color:#888>.</span>id
+<span style=color:#888>),</span>
+employer_driver <span style=color:#2838b0>AS</span> <span style=color:#888>(</span>
+  <span style=color:#888;font-style:italic>-- from suspect&#39;s description: red hair, Tesla Model S, bet. 65 and 67
+</span><span style=color:#888;font-style:italic></span>  <span style=color:#2838b0>SELECT</span> <span style=color:#666>*</span>
+  <span style=color:#2838b0>FROM</span> drivers_license
+  <span style=color:#2838b0>WHERE</span> hair_color <span style=color:#666>=</span> <span style=color:#b83838>&#39;red&#39;</span>
+    <span style=color:#2838b0>AND</span> car_make <span style=color:#666>=</span> <span style=color:#b83838>&#39;Tesla&#39;</span>
+    <span style=color:#2838b0>AND</span> car_model <span style=color:#666>=</span> <span style=color:#b83838>&#39;Model S&#39;</span>
+    <span style=color:#2838b0>AND</span> height <span style=color:#666>&gt;=</span> <span style=color:#444>65</span>
+    <span style=color:#2838b0>AND</span> height <span style=color:#666>&lt;=</span> <span style=color:#444>67</span>
+<span style=color:#888>),</span>
+employer_symphony <span style=color:#2838b0>AS</span> <span style=color:#888>(</span>
+  <span style=color:#888;font-style:italic>-- what are these people thinking using facebook_event_checkin?!
+</span><span style=color:#888;font-style:italic></span>  <span style=color:#888;font-style:italic>-- anyhow, at 2017 december, of event name SQL Symphony Concert,
+</span><span style=color:#888;font-style:italic></span>  <span style=color:#888;font-style:italic>-- and thrice (GROUP BY person_id HAVING count = 3)
+</span><span style=color:#888;font-style:italic></span>  <span style=color:#2838b0>SELECT</span> <span style=color:#666>*</span><span style=color:#888>,</span> <span style=color:#2838b0>COUNT</span><span style=color:#888>(</span><span style=color:#666>*</span><span style=color:#888>)</span> <span style=color:#2838b0>AS</span> <span style=color:#2838b0>count</span>
+  <span style=color:#2838b0>FROM</span> facebook_event_checkin
+  <span style=color:#2838b0>WHERE</span> event_name <span style=color:#666>=</span> <span style=color:#b83838>&#39;SQL Symphony Concert&#39;</span>
+    <span style=color:#2838b0>AND</span> <span style=color:#388038>date</span> <span style=color:#666>&gt;=</span> <span style=color:#444>20171201</span>
+    <span style=color:#2838b0>AND</span> <span style=color:#388038>date</span> <span style=color:#666>&lt;=</span> <span style=color:#444>20171231</span>
+  <span style=color:#2838b0>GROUP</span> <span style=color:#2838b0>BY</span> person_id
+  <span style=color:#2838b0>HAVING</span> <span style=color:#2838b0>count</span> <span style=color:#666>=</span> <span style=color:#444>3</span>
+<span style=color:#888>),</span>
+employer <span style=color:#2838b0>AS</span> <span style=color:#888>(</span>
+  <span style=color:#2838b0>SELECT</span> person<span style=color:#888>.</span><span style=color:#666>*</span>
+  <span style=color:#2838b0>FROM</span> person
+    <span style=color:#2838b0>JOIN</span> employer_driver <span style=color:#2838b0>ON</span> person<span style=color:#888>.</span>license_id <span style=color:#666>=</span> employer_driver<span style=color:#888>.</span>id
+    <span style=color:#2838b0>JOIN</span> employer_symphony <span style=color:#2838b0>ON</span> person<span style=color:#888>.</span>id <span style=color:#666>=</span> employer_symphony<span style=color:#888>.</span>person_id
+<span style=color:#888>)</span>
+<span style=color:#2838b0>SELECT</span> <span style=color:#666>*</span>
+<span style=color:#2838b0>FROM</span> suspect<span style=color:#888>,</span> employer
+</code></pre></div><p>This all seems a bit overwhelming.
+Let&rsquo;s break this down.</p><h3 id=determining-the-details-of-the-murder>Determining the details of the murder</h3><div class=highlight><pre style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=color:#2838b0>SELECT</span> <span style=color:#666>*</span>
+<span style=color:#2838b0>FROM</span> crime_scene_report
+<span style=color:#2838b0>WHERE</span> <span style=color:#388038>date</span> <span style=color:#666>=</span> <span style=color:#444>20180115</span>
+  <span style=color:#2838b0>AND</span> <span style=color:#2838b0>TYPE</span> <span style=color:#666>=</span> <span style=color:#b83838>&#39;murder&#39;</span>
+  <span style=color:#2838b0>AND</span> city <span style=color:#666>=</span> <span style=color:#b83838>&#39;SQL City&#39;</span>
+</code></pre></div><p>This helps us extract the details of the murder in question.
+It returns the following query:</p><pre><code class=language-none data-lang=none>date      | type   | description                                                           | city
+20180115  | murder | Security footage shows that there were 2 witnesses.                   | SQL City
+          |        | The first witness lives at the last house on &quot;Northwestern Dr&quot;.       |
+          |        | The second witness, named Annabel, lives somewhere on &quot;Franklin Ave&quot;. |
+</code></pre><p>Let us save this query as <code>murder</code> using <code>WITH murder AS (SELECT ...)</code>.</p><h3 id=extracting-witness-testimony>Extracting witness testimony</h3><h4 id=identifying-the-two-witnesses>Identifying the two witnesses</h4><p>The first witness lives at the last house on &ldquo;Northwestern Dr&rdquo;.
+Assuming that the houses are lined up with increasing house number,
+we can just grab the house with the largest address_number.</p><div class=highlight><pre style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=color:#2838b0>SELECT</span> <span style=color:#666>*</span>
+<span style=color:#2838b0>FROM</span> person
+<span style=color:#2838b0>WHERE</span> address_street_name <span style=color:#666>=</span> <span style=color:#b83838>&#39;Northwestern Dr&#39;</span>
+  <span style=color:#2838b0>AND</span> address_number <span style=color:#666>=</span> <span style=color:#888>(</span>
+    <span style=color:#2838b0>SELECT</span> <span style=color:#2838b0>MAX</span><span style=color:#888>(</span>address_number<span style=color:#888>)</span>
+    <span style=color:#2838b0>FROM</span> person
+  <span style=color:#888>)</span>
+</code></pre></div><p>This returns the following query, which we save as <code>first_witness</code>:</p><pre><code class=language-none data-lang=none>id    | name            | license_id | address_number | address_street_name | ssn
+14887 | Morty Schapiro  | 118009     | 4919           | Northwestern Dr     | 111564949
+</code></pre><p>The second witness has a name that should contain &ldquo;Anabel&rdquo;
+and lives at &ldquo;Franklin Ave&rdquo;.</p><div class=highlight><pre style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=color:#2838b0>SELECT</span> <span style=color:#666>*</span>
+<span style=color:#2838b0>FROM</span> person
+<span style=color:#2838b0>WHERE</span> name <span style=color:#2838b0>LIKE</span> <span style=color:#b83838>&#34;%Annabel%&#34;</span>
+  <span style=color:#2838b0>AND</span> address_street_name <span style=color:#666>=</span> <span style=color:#b83838>&#39;Franklin Ave&#39;</span>
+</code></pre></div><p>This returns the following query, which we save as <code>second_witness</code>:</p><pre><code class=language-none data-lang=none>id    | name           | license_id | address_number | address_street_name | ssn
+16371 | Annabel Miller | 490173     | 103            | Franklin Ave        | 318771143
+</code></pre><p>Let us combine the two so that we can grab their testimonies easily.
+Let us save the result as <code>witnesses</code>:</p><div class=highlight><pre style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=color:#2838b0>SELECT</span> person<span style=color:#888>.</span><span style=color:#666>*</span>
+<span style=color:#2838b0>FROM</span> person<span style=color:#888>,</span> first_witness<span style=color:#888>,</span> second_witness
+<span style=color:#2838b0>WHERE</span> person<span style=color:#888>.</span>id <span style=color:#666>=</span> first_witness<span style=color:#888>.</span>id
+  <span style=color:#2838b0>OR</span> person<span style=color:#888>.</span>id <span style=color:#666>=</span> second_witness<span style=color:#888>.</span>id
+</code></pre></div><pre><code class=language-none data-lang=none>id    | name           | license_id | address_number | address_street_name | ssn
+14887 | Morty Schapiro | 118009     | 4919           | Northwestern Dr     | 111564949
+16371 | Annabel Miller | 490173     | 103            | Franklin Ave        | 318771143
+</code></pre><h4 id=extracting-their-testimonies>Extracting their testimonies</h4><p>Now that we have a list of witnesses,
+we can now extract the testimony they have given using the <code>interview</code> table.
+Let us save this query as <code>witnesses_interview</code>:</p><div class=highlight><pre style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=color:#2838b0>SELECT</span> witnesses<span style=color:#888>.</span>name<span style=color:#888>,</span> interview<span style=color:#888>.</span><span style=color:#666>*</span>
+<span style=color:#2838b0>FROM</span> interview
+  <span style=color:#2838b0>JOIN</span> witnesses <span style=color:#2838b0>ON</span> interview<span style=color:#888>.</span>person_id <span style=color:#666>=</span> witnesses<span style=color:#888>.</span>id
+</code></pre></div><pre><code class=language-none data-lang=none>name           | person_id | transcript
+Morty Schapiro | 14887     | I heard a gunshot and then saw a man run out.
+               |           | He had a &quot;Get Fit Now Gym&quot; bag. The membership number on the bag
+               |           | started with &quot;48Z&quot;. Only gold members have those bags. The man got
+               |           | into a car with a plate that included &quot;H42W&quot;.
+Annabel Miller | 16371     | I saw the murder happen, and I recognized the killer from my gym
+               |           | when I was working out last week on January the 9th.
+</code></pre><p>Looks like we have a good lead on our hands.
+This of course, assumes that they are truthful.</p><h3 id=finding-the-suspect>Finding the suspect</h3><p>Using the <code>get_fit_now_member</code>, <code>get_fit_now_check_in</code>, and <code>drivers_license</code> tables,
+we can narrow down the suspects based on the information provided.</p><h4 id=using-get-fit-now-data>Using &ldquo;Get Fit Now&rdquo; data</h4><p>Let us find which ones have a membership number starting with <code>48Z</code>
+and a <code>gold</code> membership status.
+Let us save this as <code>with_48z</code>:</p><div class=highlight><pre style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=color:#2838b0>SELECT</span> <span style=color:#666>*</span>
+<span style=color:#2838b0>FROM</span> get_fit_now_member
+<span style=color:#2838b0>WHERE</span> id <span style=color:#2838b0>LIKE</span> <span style=color:#b83838>&#39;48Z%&#39;</span>
+  <span style=color:#2838b0>AND</span> membership_status <span style=color:#666>=</span> <span style=color:#b83838>&#39;gold&#39;</span>
+</code></pre></div><pre><code class=language-none data-lang=none>id    | person_id | name          | membership_start_date | membership_status
+48Z7A | 28819     | Joe Germuska  | 20160305              | gold
+48Z55 | 67318     | Jeremy Bowers | 20160101              | gold
+</code></pre><p>Using the information Miller provided,
+let us now find which ones have been at the gym at the 9th of Jsanuary.
+Let us save this as <code>checked_in_at_20180109</code>:</p><div class=highlight><pre style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=color:#2838b0>SELECT</span> <span style=color:#666>*</span>
+<span style=color:#2838b0>FROM</span> get_fit_now_check_in
+<span style=color:#2838b0>WHERE</span> check_in_date <span style=color:#666>=</span> <span style=color:#444>20180109</span>
+</code></pre></div><pre><code class=language-none data-lang=none>membership_id | check_in_date | check_in_time | check_out_time
+X0643         | 20180109      | 957           | 1164
+UK1F2         | 20180109      | 344           | 518
+XTE42         | 20180109      | 486           | 1124
+1AE2H         | 20180109      | 461           | 944
+6LSTG         | 20180109      | 399           | 515
+7MWHJ         | 20180109      | 273           | 885
+GE5Q8         | 20180109      | 367           | 959
+48Z7A         | 20180109      | 1600          | 1730
+48Z55         | 20180109      | 1530          | 1700
+90081         | 20180109      | 1600          | 1700
+</code></pre><p>Now let us combine the data from <code>checked_in_at_20180109</code> and <code>with_48z</code>
+and save it as <code>suspect_lifters</code>:</p><div class=highlight><pre style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=color:#2838b0>SELECT</span> with_48z<span style=color:#888>.</span>id <span style=color:#2838b0>AS</span> membership_id<span style=color:#888>,</span> person<span style=color:#888>.</span><span style=color:#666>*</span>
+<span style=color:#2838b0>FROM</span> person
+  <span style=color:#2838b0>JOIN</span> with_48z <span style=color:#2838b0>ON</span> person<span style=color:#888>.</span>id <span style=color:#666>=</span> with_48z<span style=color:#888>.</span>person_id
+  <span style=color:#2838b0>JOIN</span> checked_in_at_20180109 <span style=color:#2838b0>ON</span> with_48z<span style=color:#888>.</span>id <span style=color:#666>=</span> checked_in_at_20180109<span style=color:#888>.</span>membership_id
+</code></pre></div><pre><code class=language-none data-lang=none>membership_id | id    | name          | license_id | address_number | address_street_name   | ssn
+48Z7A         | 28819 | Joe Germuska  | 173289     | 111            | Fisk Rd               | 138909730
+48Z55         | 67318 | Jeremy Bowers | 423327     | 530            | Washington Pl, Apt 3A | 871539279
+</code></pre><p>Uh oh. Both of them have the same starting membership ID,
+are both gold members, and checked in at that date.</p><h4 id=using-drivers-license-data>Using driver&rsquo;s license data</h4><p>Recall that Schapiro testified that the plate number he used has <code>H42W</code> in it.
+Let us look for all people with that license number.</p><div class=highlight><pre style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=color:#2838b0>SELECT</span> drivers_license<span style=color:#888>.</span>plate_number<span style=color:#888>,</span> person<span style=color:#888>.</span><span style=color:#666>*</span>
+<span style=color:#2838b0>FROM</span> person
+  <span style=color:#2838b0>JOIN</span> drivers_license <span style=color:#2838b0>ON</span> person<span style=color:#888>.</span>license_id <span style=color:#666>=</span> drivers_license<span style=color:#888>.</span>id
+    <span style=color:#2838b0>AND</span> drivers_license<span style=color:#888>.</span>plate_number <span style=color:#2838b0>LIKE</span> <span style=color:#b83838>&#39;%H42W%&#39;</span>
+</code></pre></div><p>Let us save this result as <code>suspect_drivers</code>:</p><pre><code class=language-none data-lang=none>plate_number | id    | name           | license_id | address_number | address_street_name   | ssn
+4H42WR       | 51739 | Tushar Chandra | 664760     | 312            | Phi St                | 137882671
+0H42W2       | 67318 | Jeremy Bowers  | 423327     | 530            | Washington Pl, Apt 3A | 871539279
+H42W0X       | 78193 | Maxine Whitely | 183779     | 110            | Fisk Rd               | 137882671
+</code></pre><p>Using <code>suspect_lifters</code> and <code>suspect_drivers</code>,
+let us find who the suspect is and save the result as <code>suspect</code>:</p><div class=highlight><pre style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=color:#2838b0>SELECT</span> person<span style=color:#888>.</span><span style=color:#666>*</span>
+<span style=color:#2838b0>FROM</span> person
+  <span style=color:#2838b0>JOIN</span> suspect_lifters <span style=color:#2838b0>ON</span> person<span style=color:#888>.</span>id <span style=color:#666>=</span> suspect_lifters<span style=color:#888>.</span>id
+  <span style=color:#2838b0>JOIN</span> suspect_drivers <span style=color:#2838b0>ON</span> person<span style=color:#888>.</span>id <span style=color:#666>=</span> suspect_drivers<span style=color:#888>.</span>id
+</code></pre></div><pre><code class=language-none data-lang=none>id    | name          | license_id  | address_number | address_street_name   | ssn
+67318 | Jeremy Bowers | 423327      | 530            | Washington Pl, Apt 3A | 871539279
+</code></pre><p>Bingo.
+Let us put his name in the &ldquo;Check your solution&rdquo; section:</p><div class=highlight><pre style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=color:#2838b0>INSERT</span> <span style=color:#2838b0>INTO</span> solution <span style=color:#2838b0>VALUES</span> <span style=color:#888>(</span><span style=color:#444>1</span><span style=color:#888>,</span> <span style=color:#b83838>&#39;Jeremy Bowers&#39;</span><span style=color:#888>);</span>
+<span style=color:#2838b0>SELECT</span> value <span style=color:#2838b0>FROM</span> solution<span style=color:#888>;</span>
+</code></pre></div><pre><code class=language-none data-lang=none>value
+Congrats, you found the murderer! But wait, there's more... If you think you're up for a challenge,
+try querying the interview transcript of the murderer to find the real villain behind this crime.
+If you feel especially confident in your SQL skills, try to complete this final step with no more
+than 2 queries. Use this same INSERT statement with your new suspect to check your answer.
+</code></pre><p>Well&mldr; guess we&rsquo;re not done yet.</p><h3 id=finding-the-employer>Finding the employer</h3><p>What did Bowers tell the coppers?</p><div class=highlight><pre style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=color:#2838b0>SELECT</span> person<span style=color:#888>.</span>name<span style=color:#888>,</span> interview<span style=color:#888>.</span><span style=color:#666>*</span>
+<span style=color:#2838b0>FROM</span> interview
+  <span style=color:#2838b0>JOIN</span> suspect <span style=color:#2838b0>ON</span> interview<span style=color:#888>.</span>person_id <span style=color:#666>=</span> suspect<span style=color:#888>.</span>id
+  <span style=color:#2838b0>JOIN</span> person <span style=color:#2838b0>ON</span> interview<span style=color:#888>.</span>person_id <span style=color:#666>=</span> person<span style=color:#888>.</span>id
+</code></pre></div><pre><code class=language-none data-lang=none>name          | person_id | transcript
+Jeremy Bowers | 67318     | I was hired by a woman with a lot of money.
+              |           | I don't know her name but I know she's around 5'5&quot; (65&quot;) or 5'7&quot; (67&quot;).
+              |           | She has red hair and she drives a Tesla Model S.
+              |           | I know that she attended the SQL Symphony Concert 3 times in December 2017.
+</code></pre><p>Guess we have to look for the employer now.</p><p>The <code>drivers_license</code> table contains data regarding peoples' heights and what cars they drive.
+We are looking for a person with red hair, between 65 to 67 inches of height, and has a red Tesla Model S.
+Let us save this query as <code>employer_driver</code>:</p><div class=highlight><pre style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=color:#2838b0>SELECT</span> <span style=color:#666>*</span>
+<span style=color:#2838b0>FROM</span> drivers_license
+<span style=color:#2838b0>WHERE</span> hair_color <span style=color:#666>=</span> <span style=color:#b83838>&#39;red&#39;</span>
+  <span style=color:#2838b0>AND</span> car_make <span style=color:#666>=</span> <span style=color:#b83838>&#39;Tesla&#39;</span>
+  <span style=color:#2838b0>AND</span> car_model <span style=color:#666>=</span> <span style=color:#b83838>&#39;Model S&#39;</span>
+  <span style=color:#2838b0>AND</span> height <span style=color:#666>&gt;=</span> <span style=color:#444>65</span>
+  <span style=color:#2838b0>AND</span> height <span style=color:#666>&lt;=</span> <span style=color:#444>67</span>
+</code></pre></div><pre><code class=language-none data-lang=none>id     | age | height | eye_color | hair_color | gender | plate_number | car_make | car_model
+202298 | 68  | 66     | green     | red        | female | 500123       | Tesla    | Model S
+291182 | 65  | 66     | blue      | red        | female | 08CM64       | Tesla    | Model S
+918773 | 48  | 65     | black     | red        | female | 917UU3       | Tesla    | Model S
+</code></pre><p>We also know that the suspect attended an event named &ldquo;SQL Symphony Concert 3&rdquo;
+thrice in December 2017.
+Fortunately we can use the <code>facebook_event_checkin</code> table.
+Let us save this query as <code>employer_symphony</code>:</p><div class=highlight><pre style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=color:#2838b0>SELECT</span> <span style=color:#666>*</span><span style=color:#888>,</span> <span style=color:#2838b0>COUNT</span><span style=color:#888>(</span><span style=color:#666>*</span><span style=color:#888>)</span> <span style=color:#2838b0>AS</span> <span style=color:#2838b0>count</span>
+<span style=color:#2838b0>FROM</span> facebook_event_checkin
+<span style=color:#2838b0>WHERE</span> event_name <span style=color:#666>=</span> <span style=color:#b83838>&#39;SQL Symphony Concert&#39;</span>
+  <span style=color:#2838b0>AND</span> <span style=color:#388038>date</span> <span style=color:#666>&gt;=</span> <span style=color:#444>20171201</span>
+  <span style=color:#2838b0>AND</span> <span style=color:#388038>date</span> <span style=color:#666>&lt;=</span> <span style=color:#444>20171231</span>
+<span style=color:#2838b0>GROUP</span> <span style=color:#2838b0>BY</span> person_id
+<span style=color:#2838b0>HAVING</span> <span style=color:#2838b0>count</span> <span style=color:#666>=</span> <span style=color:#444>3</span>
+</code></pre></div><pre><code class=language-none data-lang=none>person_id | event_id | event_name           | date     | count
+24556     | 1143     | SQL Symphony Concert | 20171224 | 3
+99716     | 1143     | SQL Symphony Concert | 20171229 | 3
+</code></pre><p>Using <code>employer_symphony</code> and <code>employer_driver</code>,
+let us now find who our employer is and save the result as <code>employer</code>:</p><div class=highlight><pre style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=color:#2838b0>SELECT</span> person<span style=color:#888>.</span><span style=color:#666>*</span>
+<span style=color:#2838b0>FROM</span> person
+  <span style=color:#2838b0>JOIN</span> employer_driver <span style=color:#2838b0>ON</span> person<span style=color:#888>.</span>license_id <span style=color:#666>=</span> employer_driver<span style=color:#888>.</span>id
+  <span style=color:#2838b0>JOIN</span> employer_symphony <span style=color:#2838b0>ON</span> person<span style=color:#888>.</span>id <span style=color:#666>=</span> employer_symphony<span style=color:#888>.</span>person_id
+</code></pre></div><pre><code class=language-none data-lang=none>id    | name             | license_id | address_number | address_street_name | ssn
+99716 | Miranda Priestly | 202298     | 1883           | Golden Ave          | 987756388
+</code></pre><p>And let us place the name in our &ldquo;Check your solution&rdquo; section:</p><div class=highlight><pre style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=color:#2838b0>INSERT</span> <span style=color:#2838b0>INTO</span> solution <span style=color:#2838b0>VALUES</span> <span style=color:#888>(</span><span style=color:#444>1</span><span style=color:#888>,</span> <span style=color:#b83838>&#39;Miranda Priestly&#39;</span><span style=color:#888>);</span>
+<span style=color:#2838b0>SELECT</span> value <span style=color:#2838b0>FROM</span> solution<span style=color:#888>;</span>
+</code></pre></div><pre><code class=language-none data-lang=none>value
+Congrats, you found the brains behind the murder! Everyone in SQL City hails you
+as the greatest SQL detective of all time. Time to break out the champagne!
+</code></pre><p>Well boys, we did it.
+The employer is no more.</p></p></div><div class=card-footer><small class=text-muted><i class="fas fa-folder text-primary"></i>&nbsp;
+<a href=https://janreggie.github.io/categories/#challenges class="badge badge-primary"><span>challenges</span></a><br><i class="fas fa-tags text-secondary"></i>&nbsp;
+<a href=https://janreggie.github.io/tags/#sql class="badge badge-secondary"><span>sql</span></a>
+<a href=https://janreggie.github.io/tags/#challenges class="badge badge-secondary"><span>challenges</span></a></small></div></div></div></main><footer class="navbar-light border-top"><div class=container><div class=row><div class="col-12 col-md-3 mb-3"><h5>janreggie's sandbox</h5>sandbox + portfolio + blog</div><div class="col-12 col-md-3 mb-3"><h5>Social</h5><ul class="list-unstyled list-inline"><li class=list-inline-item><a href=https://github.com/janreggie target=_blank rel="noopener noreferrer" title=GitHub class="fab fa-github fa-2x"></a></li><li class=list-inline-item><a href=https://gitlab.com/janreggie target=_blank rel="noopener noreferrer" title=GitLab class="fab fa-gitlab fa-2x"></a></li><li class=list-inline-item><a href=https://stackoverflow.com/users/14020202 target=_blank rel="noopener noreferrer" title="Stack Overflow" class="fab fa-stack-overflow fa-2x"></a></li><li class=list-inline-item><a href=https://codepen.io/janreggie target=_blank rel="noopener noreferrer" title=CodePen class="fab fa-codepen fa-2x"></a></li><li class=list-inline-item><a href=https://linkedin.com/in/janreggie target=_blank rel="noopener noreferrer" title=LinkedIn class="fab fa-linkedin fa-2x"></a></li></ul></div><div class="col-12 col-md-3 mb-3"><h5>Site</h5><ul class=list-unstyled><li><a href=https://janreggie.github.io/about/><i class="fas fa-address-card"></i>About</a></li><li><a href=https://janreggie.github.io/categories/><i class="fas fa-folder"></i>Categories</a></li><li><a href=https://janreggie.github.io/tags/><i class="fas fa-tags"></i>Tags</a></li></ul></div><div class="col-12 col-md-3 mb-3">&copy; 2020 Jan Reggie Dela Cruz<br><p xmlns:dct=http://purl.org/dc/terms/ xmlns:cc=http://creativecommons.org/ns# class=license-text><a href=https://janreggie.github.io/notice/>Except otherwise noted</a>,
+<a rel=cc:attributionurl property="dct:title" href=https://janreggie.github.io/>janreggie's sandbox</a>
+is licensed under <a rel=license href=https://janreggie.github.io/license/>CC BY 4.0<img style=height:22px!important;margin-left:3px;vertical-align:text-bottom src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style=height:22px!important;margin-left:3px;vertical-align:text-bottom src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p></div></div></div></footer><script src=https://janreggie.github.io/js/vendor.min.677137e5832c000e05d2a682a3a67c3ce3c1fcfbea1ffe5b1cc27b7ba44d0051b4d322c845b936af431c3ed1f6e471e55d5273f9599e8e631553871bcda7395b.js integrity="sha512-Z3E35YMsAA4F0qaCo6Z8POPB/PvqH/5bHMJ7e6RNAFG00yLIRbk2r0McPtH25HHlXVJz+VmejmMVU4cbzac5Ww=="></script><script src=https://janreggie.github.io/js/custom.min.08eab7c02e1a27987b10b47cdbb0c6328d8d2ca64147b565ddc005c30681d236b601db9e9d51f3c0e87e4a9ab374c30da4324d73a12ae161d229ac333b8319e9.js integrity="sha512-COq3wC4aJ5h7ELR827DGMo2NLKZBR7Vl3cAFwwaB0ja2AduenVHzwOh+SpqzdMMNpDJNc6Eq4WHSKawzO4MZ6Q=="></script></body></html>
