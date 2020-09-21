@@ -1,6 +1,9 @@
 [projects]
 other = "Projects"
 
+[posts]
+other = "Posts"
+
 [readmore]
 other = "Read more"
 

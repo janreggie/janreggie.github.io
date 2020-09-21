@@ -2,21 +2,30 @@
 
 <div class="container mt-3 mb-3">
   <div class="jumbotron text-center" id="index-header">
-  <h1 class="display-4">{{ .Site.Params.header }}</h1>
-  <p class="lead">{{ .Site.Params.lede }}</p>
+    <h1 class="display-4">{{ .Site.Params.header }}</h1>
+    <p class="lead">{{ .Site.Params.lede }}</p>
   </div>
-  <div id="projects-list">
-  <h1>{{ i18n "projects" }}</h1>
-  <div class="container mt-3 mb-3">
-    {{ $paginator := .Paginate ( where .Site.RegularPages.ByPublishDate.Reverse "Type" "==" "project") }}
-    <div class="card-columns">
-    {{ range $paginator.Pages }}
-      {{- partial "content_index.html" . -}}
+
+  <div class="container mt-3 mb-3" id="post-list">
+    <h1>{{ i18n "posts" }}</h1>
+    {{ $paginator := .Paginate ( where .Site.RegularPages.ByPublishDate.Reverse "Type" "!=" "page") }}
+    {{ if .Site.Params.startPageColumns }}
+      <div class="card-columns">
+        {{ range $paginator.Pages }}
+          {{- partial "content_index.html" . -}}
+        {{ end }}
+      </div>
+    {{ else }}
+      {{ range $paginator.Pages }}
+        <div class="mb-3">
+          {{- partial "content_index.html" . -}}
+        </div>
+      {{ end }}
     {{ end }}
-    </div>
+  
     {{ template "_internal/pagination.html" . }}
   </div>
-  </div>
+  
 </div>
 
 {{ end }}

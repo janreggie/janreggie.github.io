@@ -7,7 +7,7 @@ enableInlineShortcodes: true
 enableRobotsTXT: true
 footnoteReturnLinkContents: ^
 languageCode: en-us
-paginate: 6
+paginate: 10
 pygmentsCodeFences: true
 theme: bootstrap-bp-hugo-theme
 title: janreggie's sandbox
@@ -116,9 +116,19 @@ social:
 
 menu:
   main:
+    - identifier: projects
+      name: Projects
+      pre: <i class='far fa-star'></i>
+      url: /project/
+      weight: 1
+    - identifier: posts
+      name: Posts
+      pre: <i class="fas fa-file-alt"></i>
+      url: /post/
+      weight: 2
     - identifier: about
       name: About
-      pre: <i class='fas fa-heart'></i>
+      pre: <i class='fas fa-address-card'></i>
       url: /about/
       weight: 10
 
