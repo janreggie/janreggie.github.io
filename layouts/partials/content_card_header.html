@@ -17,14 +17,16 @@
   {{- $featured := cond (ne $.Params.featured_image nil) (.Page.Resources.GetMatch (printf "*%s" $.Params.featured_image)) $featured -}}
   {{ $sitetitle := (.Title) }}
   {{ $fullsize := .Scratch.Get "fullsize" }}
-  {{- with $featured -}}
+  {{ if $featured }}
     <a href="{{ .RelPermalink }}">
-    {{ if $fullsize }}
-      {{ $thumb := .Resize "1108x" }}
-      <img class="card-img-top" src="{{ $thumb.RelPermalink }}" alt="{{ $sitetitle }}" title="{{ $sitetitle }}">
-    {{ else }}
-      {{ $thumb := .Resize "360x" }}
-      <img class="card-img-top" src="{{ $thumb.RelPermalink }}" alt="{{ $sitetitle }}" title="{{ $sitetitle }}">
+      {{- with $featured -}}
+      {{ if $fullsize }}
+        {{ $thumb := .Resize "1108x" }}
+        <img class="card-img-top" src="{{ $thumb.RelPermalink }}" alt="{{ $sitetitle }}" title="{{ $sitetitle }}">
+      {{ else }}
+        {{ $thumb := .Resize "360x" }}
+        <img class="card-img-top" src="{{ $thumb.RelPermalink }}" alt="{{ $sitetitle }}" title="{{ $sitetitle }}">
+      {{ end }}
     {{ end }}
     </a>
   {{ end }}
