@@ -7,9 +7,9 @@ lastmod: {{ now.Format "2006-01-02" }}
 draft: true
 description: "Text about this post"
 tags:
-    - "tag 1"
+  - "tag 1"
 categories:
-    - Music
+  - Music
 spotify: "" # Spotify URI as spotify:track:6dMMdTgB1LcJVV3tDuET29
 ---
 

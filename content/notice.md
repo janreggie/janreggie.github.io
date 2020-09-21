@@ -113,6 +113,7 @@ THE SOFTWARE.
 - Taken from: <https://github.com/peaceiris/actions-hugo>
 - License text: <https://github.com/peaceiris/actions-hugo/blob/main/LICENSE>
 
+```none
 MIT License
 
 Copyright (c) 2020 Shohei Ueda (peaceiris)
@@ -134,6 +135,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+```
 
 ## Fantasque Sans Mono
 

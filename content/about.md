@@ -45,8 +45,7 @@ only need to credit me and the permalink.
 
 I will put the more technical discussion of this website,
 such as configuration and details on modifying the theme in Hugo,
-in [janreggie.github.io: internals of janreggie's sandbox]({{/* < relref "/project/janreggie.github.io/index.md" > */}}).
-<!-- Apparently without the "md", it thinks the file ends in "io". -->
+in [janreggie.github.io: internals of janreggie's sandbox]({{< relref "/project/janreggie.github.io/index.md" >}}).
 
 ## My regards
 

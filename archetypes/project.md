@@ -7,9 +7,9 @@ lastmod: {{ now.Format "2006-01-02" }}
 draft: true
 description: "Insert the description here"
 tags:
-    - "tag 1"
+  - "tag 1"
 categories:
-    - "project"
+  - "project"
 link: "https://example.com" # link to output, documentation, or Github page
 ---
 

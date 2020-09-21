@@ -7,11 +7,11 @@ lastmod: 2020-09-17
 draft: false
 description: "Creating a random quote machine for freeCodeCamp's Front End Libraries certification using create-react-app and TypeScript"
 tags:
-    - react
-    - javascript
-    - freecodecamp
+  - react
+  - javascript
+  - freecodecamp
 categories:
-    - "project"
+  - "web development"
 link: "https://janreggie.github.io/randomquoter/"
 ---
 
