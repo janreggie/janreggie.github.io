@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>bootstrap on janreggie's sandbox</title><link>https://janreggie.github.io/tags/bootstrap/</link><description>Recent content in bootstrap on janreggie's sandbox</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Jan Reggie Dela Cruz</copyright><lastBuildDate>Mon, 21 Sep 2020 16:11:13 +0800</lastBuildDate><atom:link href="https://janreggie.github.io/tags/bootstrap/index.xml" rel="self" type="application/rss+xml"/><item><title>janreggie.github.io: internals of janreggie's sandbox</title><link>https://janreggie.github.io/project/janreggie.github.io/</link><pubDate>Mon, 21 Sep 2020 16:11:13 +0800</pubDate><guid>https://janreggie.github.io/project/janreggie.github.io/</guid><description>&lt;p>janreggie&amp;rsquo;s sandbox is built using &lt;a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">
+Hugo
+&amp;nbsp;&lt;i class="fas fa-external-link-alt">&lt;/i>
+&lt;/a>,
+&lt;a href="https://themes.gohugo.io/bootstrap-bp-hugo-theme/" target="_blank" rel="noopener noreferrer">
+bootstrap-bp-hugo-theme
+&amp;nbsp;&lt;i class="fas fa-external-link-alt">&lt;/i>
+&lt;/a>,
+external fonts, and tears and sweat from &lt;a href="https://github.com/janreggie/" target="_blank" rel="noopener noreferrer">
+the author
+&amp;nbsp;&lt;i class="fab fa-github">&lt;/i>
+&lt;/a>.
+In this post I describe the steps I made in building this website.&lt;/p></description></item></channel></rss>
