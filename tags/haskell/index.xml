@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>haskell on janreggie's sandbox</title><link>https://janreggie.github.io/tags/haskell/</link><description>Recent content in haskell on janreggie's sandbox</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Jan Reggie Dela Cruz</copyright><lastBuildDate>Fri, 25 Dec 2020 20:07:33 +0800</lastBuildDate><atom:link href="https://janreggie.github.io/tags/haskell/index.xml" rel="self" type="application/rss+xml"/><item><title>I completed the Haskell MOOC</title><link>https://janreggie.github.io/post/2020/12/i-completed-the-haskell-mooc/</link><pubDate>Fri, 25 Dec 2020 20:07:33 +0800</pubDate><guid>https://janreggie.github.io/post/2020/12/i-completed-the-haskell-mooc/</guid><description>&lt;p>The &lt;a href="https://haskell.mooc.fi/" target="_blank" rel="noopener noreferrer">
+Haskell MOOC
+&amp;nbsp;&lt;i class="fas fa-external-link-alt">&lt;/i>
+&lt;/a> is an online course on Functional Programming using Haskell.
+It is a great way to introduce experienced programmers into functional programming,
+and I myself have been introduced to the paradigm properly through this course.&lt;/p></description></item></channel></rss>
