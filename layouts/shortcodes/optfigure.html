@@ -2,17 +2,12 @@
 {{ $alt := (.Get "alt") }}
 {{ $caption := (.Get "caption") }}
 
-<figure{{ with .Get "class" }} class="{{ . }}"{{ end }}>
+<figure class='optfigure{{ with .Get "class" }} {{ . }}{{ end }}'>
   {{- if .Get "link" -}}
-    <a href="{{ .Get "link" }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}>
+    <a href='{{ .Get "link" }}'{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}>
   {{- end }}
 {{ with $original }}
-   <!-- If image is too large resize it -->
   {{ $image := . }}
-  {{ if gt $original.Width 600 }}{{ $image = .Resize "600x" }}
-  {{ else if gt $original.Height 600 }}{{ $image = .Resize "x600" }}
-  {{ else }}{{ $image = . }}
-  {{ end }}
     <img src="{{ $image.RelPermalink }}" class="mx-auto d-block" width="{{ $image.Width }}" height="{{ $image.Height }}"
     {{- if or ($alt) ($caption) }}
       alt="{{ with $alt }}{{ . }}{{ else }}{{ $caption | markdownify| plainify }}{{ end }}"

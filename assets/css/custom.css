@@ -20,3 +20,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 pre, code {
   font-family: 'Fantasque Sans Mono', 'Courier New', Courier, monospace;
 }
+
+/* Keep optfigure images within reasonable bounds */
+.optfigure img {
+  max-width: 90%;
+  height: auto;
+  max-height: 80vh;
+  margin: auto;
+}
