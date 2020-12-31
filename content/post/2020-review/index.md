@@ -1,10 +1,10 @@
 ---
 title: "Looking Back: 2020"
 type: post
-date: 2020-12-31T14:33:04+08:00
+date: 2020-12-31T23:59:04+08:00
 publishdate: 2020-12-31
 lastmod: 2020-12-31
-draft: true
+draft: false
 description: "In this post, I look back at the achievements and projects that I have done in 2020, and provide some hints on what I might do in 2021."
 tags:
   - "2020"
