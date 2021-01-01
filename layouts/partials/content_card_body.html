@@ -29,13 +29,13 @@
   {{ end }}
 
   {{ if .Scratch.Get "showPostSummary" }}
-    <p class="card-text">{{ .Summary }}</p>
+    <div class="card-text">{{ .Summary }}</div>
 
     <a href="{{ .RelPermalink }}" class="card-link">{{ i18n "readmore" }}&hellip;</a>
     {{ if ne .Site.Params.hideReadingTime true }}
        (<i class="fas fa-clock"></i>&nbsp;~{{ .ReadingTime }} Min.)
     {{end}}
   {{ else }}
-    <p class="card-text">{{ .Content }}</p>
+    <div class="card-text">{{ .Content }}</div>
   {{ end }}
 </div>
