@@ -1,13 +1,4 @@
 /* Overwrite in your /assets/css/custom.css file */
-@import url('https://fonts.googleapis.com/css?family=Overlock|Kumbh Sans&display=swap');
-
-body {
-  font-family: 'Kumbh Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: 'Overlock', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-}
 
 #index-header {
   height: 70vh;
@@ -17,8 +8,25 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   background-position: center center;
 }
 
+body {
+  font-family: 
+    "Kumbh Sans", /* Desired font */
+    system-ui, -apple-system, BlinkMacSystemFont, /* San Francisco on macOS and iOS */
+    "Segoe UI", /* Windows */
+    "Ubuntu", /* Ubuntu */
+    "Roboto", "Noto Sans", "Droid Sans", /* Chrome OS and Android with fallbacks */
+    sans-serif, /* The final fallback for rendering in sans-serif. */
+    "Emoji"; /* Emoji support */
+}
+
 pre, code {
-  font-family: 'Fantasque Sans Mono', 'Courier New', Courier, monospace;
+  font-family: 
+    ui-monospace, /* San Francisco Mono on macOS and iOS */
+    "Cascadia Mono", "Segoe UI Mono", /* Newer Windows monospace fonts that are optionally installed. Most likely to be rendered in Consolas */
+    "Ubuntu Mono", /* Ubuntu */
+    "Roboto Mono", /* Chrome OS and Android */
+    Menlo, Monaco, Consolas, /* A few sensible system font choices */
+    monospace; /* The final fallback for rendering in monospace. */
 }
 
 /* Keep optfigure images within reasonable bounds */
