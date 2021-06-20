@@ -3,15 +3,16 @@ title: "janreggie.github.io: internals of janreggie's sandbox"
 type: project
 date: 2020-09-21T16:11:13+08:00
 publishdate: 2020-09-21
-lastmod: 2020-09-21
+lastmod: 2021-07-20
 draft: false
 description: "Writing this very website using Hugo, a Bootstrap template, modifying some templates for personal use, and hosting on GitHub Pages"
 tags:
   - "hugo"
   - "html"
   - "bootstrap"
-categories:
   - "web development"
+categories:
+  - "blog"
 ---
 
 janreggie's sandbox is built using [Hugo](https://gohugo.io/),
@@ -178,6 +179,8 @@ pre, code {
   font-family: 'Fantasque Sans Mono', 'Courier New', Courier, monospace;
 }
 ```
+
+I later decided to "deprecate" Fantasque Sans Mono in my post [Using System Fonts]({{< relref "/post/using-system-fonts">}}).
 
 ## git pre-commit hook to check for errors
 

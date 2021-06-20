@@ -3,7 +3,7 @@ title: "About janreggie's sandbox"
 type: page
 date: 2020-09-17T16:33:50+08:00
 publishdate: 2020-09-17
-lastmod: 2020-09-01
+lastmod: 2021-07-20
 draft: false
 description: "About janreggie's sandbox, and why I made this website"
 ---
@@ -51,12 +51,6 @@ in [janreggie.github.io: internals of janreggie's sandbox]({{< relref "/project/
 
 This website could not have been possible without the great work of [Sebastian Pech (spech66)](https://github.com/spech66)
 and his [bootstrap-bp-hugo-theme](https://github.com/spech66/bootstrap-bp-hugo-theme/).
-
-The fonts used are as follows:
-
-- titles: [Overlock by Dario Manuel Muhafara](https://fonts.google.com/specimen/Overlock)
-- text body: [Kumbh Sans by Saurabh Sharma](https://fonts.google.com/specimen/Kumbh+Sans)
-- monospace: [Fantasque Sans Mono](https://github.com/belluzj/fantasque-sans)
-  by [Jany Belluz (belluzj)](https://github.com/belluzj).
+In addition, I would like to thank Saurabh Sharma for his wondeful font [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans).
 
 Full license details can be found in the [Notice]({{< relref "/notice" >}}) page.
