@@ -78,5 +78,28 @@ something which I never thought of until now.
 And upon adding it, I was surprised that the :sun_behind_large_cloud: emoji for my previous blog post
 has been rendered "properly". That's amazing :grin:
 
-I'm currently using a Linux system so I don't know how this will look like in Windows, however...
-I should check it when I reboot.
+## Comparisons
+
+{{< optfigure src="homepage-previous"
+  alt="Screenshot of the homepage before making the font stack change in Linux. It should be the same in Windows."
+  caption="Screenshot of the homepage before making the font stack change in Linux. It should be the same in Windows." >}}
+
+{{< optfigure src="homepage-linux"
+  alt="Screenshot of the homepage in a Linux system. It uses the Ubuntu font."
+  caption="Now, the screenshot of the homepage in Linux" >}}
+
+{{< optfigure src="homepage-windows"
+  alt="Screenshot of the homepage in a Windows system. It uses the Segoe UI font."
+  caption="and the homepage in Windows." >}}
+
+{{< optfigure src="article-previous"
+  alt="Screenshot of an article before making the font stack change in Linux."
+  caption="Screenshot of an article before making the font stack change in Linux." >}}
+
+{{< optfigure src="article-linux"
+  alt="Screenshot of an article in a Linux system, using the Ubuntu and Ubuntu Mono fonts."
+  caption="Screenshot of an article in a Linux system, using the Ubuntu and Ubuntu Mono fonts." >}}
+
+{{< optfigure src="article-windows"
+  alt="Screenshot of an article in a Windows system, using the Segoe UI and Consolas fonts."
+  caption="Screenshot of an article in a Windows system, using the Segoe UI and Consolas fonts." >}}
