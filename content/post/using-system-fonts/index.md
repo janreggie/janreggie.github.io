@@ -3,7 +3,7 @@ title: "Using System Fonts and Adding Emoji"
 type: post
 date: 2021-06-20T16:34:44+08:00
 publishdate: 2021-06-20
-lastmod: 2021-06-20
+lastmod: 2021-06-26
 draft: false
 description: "In this blogpost I talk about falling back to using system fonts, as well as (incidentally) adding Emoji support"
 tags:
@@ -48,7 +48,7 @@ body {
     "Ubuntu", /* Ubuntu */
     "Roboto", "Noto Sans", "Droid Sans", /* Chrome OS and Android with fallbacks */
     sans-serif, /* The final fallback for rendering in sans-serif. */
-    "Emoji"; /* Emoji support */
+    "Noto Color Emoji", "Segoe UI Emoji", "Emoji"; /* Emoji support */
 }
 
 pre, code {

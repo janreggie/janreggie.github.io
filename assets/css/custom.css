@@ -16,7 +16,7 @@ body {
     "Ubuntu", /* Ubuntu */
     "Roboto", "Noto Sans", "Droid Sans", /* Chrome OS and Android with fallbacks */
     sans-serif, /* The final fallback for rendering in sans-serif. */
-    "Emoji"; /* Emoji support */
+    "Noto Color Emoji", "Segoe UI Emoji", "Emoji"; /* Emoji support */
 }
 
 pre, code {
