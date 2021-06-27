@@ -36,3 +36,18 @@ pre, code {
   max-height: 80vh;
   margin: auto;
 }
+
+/* Set figure and caption to centre */
+div.card-body figure {
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  max-width: 90%;
+  max-height: 80vh;
+  margin: auto;
+}
+
+div.card-body figure figcaption {
+  text-align: center;
+  padding: 3px;
+}
